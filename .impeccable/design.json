@@ -1,0 +1,663 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-08T11:52:55+00:00",
+  "title": "Design System: Advanced Building and Remodeling Associates",
+  "extensions": {
+    "colorMeta": {
+      "wall": {
+        "role": "neutral",
+        "displayName": "Dusk Navy Wall",
+        "canonical": "#1a3049",
+        "tonalRamp": [
+          "#000b21",
+          "#0f253d",
+          "#2b415b",
+          "#48607b",
+          "#67809d",
+          "#87a1c0",
+          "#acc7e7",
+          "#e0f0ff"
+        ]
+      },
+      "wall-deep": {
+        "role": "neutral",
+        "displayName": "Deep Wall",
+        "canonical": "#132539",
+        "tonalRamp": [
+          "#000b1d",
+          "#132539",
+          "#2e4157",
+          "#4b6077",
+          "#6a7f98",
+          "#8ba1ba",
+          "#b0c7e1",
+          "#e2f0ff"
+        ]
+      },
+      "wall-soft": {
+        "role": "neutral",
+        "displayName": "Soft Wall",
+        "canonical": "#24405e",
+        "tonalRamp": [
+          "#000a24",
+          "#092541",
+          "#264260",
+          "#436080",
+          "#6280a2",
+          "#82a2c5",
+          "#a7c8ec",
+          "#ddf1ff"
+        ]
+      },
+      "vinyl": {
+        "role": "neutral",
+        "displayName": "White Vinyl",
+        "canonical": "#f6f7f5",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#242423",
+          "#3f403e",
+          "#5d5e5c",
+          "#7d7d7c",
+          "#9e9f9d",
+          "#c3c4c2",
+          "#eeefed"
+        ]
+      },
+      "vinyl-2": {
+        "role": "neutral",
+        "displayName": "Vinyl Bevel",
+        "canonical": "#e3e7e9",
+        "tonalRamp": [
+          "#090c0d",
+          "#222526",
+          "#3d4042",
+          "#5b5e60",
+          "#7a7e80",
+          "#9b9fa1",
+          "#c1c5c7",
+          "#eceff0"
+        ]
+      },
+      "vinyl-shade": {
+        "role": "neutral",
+        "displayName": "Vinyl Shade",
+        "canonical": "#cbd2d8",
+        "tonalRamp": [
+          "#070c10",
+          "#1f2529",
+          "#3b4145",
+          "#585e64",
+          "#787e84",
+          "#999fa5",
+          "#bec5cb",
+          "#ebeff3"
+        ]
+      },
+      "vinyl-white": {
+        "role": "neutral",
+        "displayName": "Vinyl White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#7d7d7d",
+          "#9e9e9e",
+          "#c4c4c4",
+          "#eeeeee"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Navy Ink",
+        "canonical": "#15283c",
+        "tonalRamp": [
+          "#000b1d",
+          "#122539",
+          "#2e4157",
+          "#4b6077",
+          "#6a8098",
+          "#8aa1ba",
+          "#afc7e1",
+          "#e2f0ff"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#3e5266",
+        "tonalRamp": [
+          "#000c1c",
+          "#132537",
+          "#2e4255",
+          "#4b6074",
+          "#6a8095",
+          "#8ba1b8",
+          "#b0c7de",
+          "#e2f0ff"
+        ]
+      },
+      "on-wall": {
+        "role": "neutral",
+        "displayName": "On-Wall",
+        "canonical": "#eef3f7",
+        "tonalRamp": [
+          "#080c0e",
+          "#212527",
+          "#3c4043",
+          "#5a5e62",
+          "#797e81",
+          "#9a9fa3",
+          "#c0c5c9",
+          "#eceff1"
+        ]
+      },
+      "on-wall-soft": {
+        "role": "neutral",
+        "displayName": "On-Wall Soft",
+        "canonical": "#b9c9d7",
+        "tonalRamp": [
+          "#030c15",
+          "#192630",
+          "#34414d",
+          "#51606c",
+          "#717f8c",
+          "#91a1ae",
+          "#b6c6d4",
+          "#e6f0f9"
+        ]
+      },
+      "amber": {
+        "role": "primary",
+        "displayName": "Dusk Amber",
+        "canonical": "#f2a65a",
+        "tonalRamp": [
+          "#2a0000",
+          "#4a0600",
+          "#6c2a00",
+          "#8e4900",
+          "#b16a10",
+          "#d58b3e",
+          "#feb166",
+          "#ffe4b9"
+        ]
+      },
+      "amber-hover": {
+        "role": "primary",
+        "displayName": "Lit Amber",
+        "canonical": "#f6b673",
+        "tonalRamp": [
+          "#260000",
+          "#451000",
+          "#652f00",
+          "#874e00",
+          "#aa6e28",
+          "#cd904d",
+          "#f5b572",
+          "#ffe6bf"
+        ]
+      },
+      "amber-deep": {
+        "role": "primary",
+        "displayName": "Burnt Amber",
+        "canonical": "#d9823a",
+        "tonalRamp": [
+          "#2d0000",
+          "#4f0000",
+          "#712200",
+          "#944300",
+          "#b86412",
+          "#dd863e",
+          "#ffac66",
+          "#ffe1b9"
+        ]
+      },
+      "amber-pale": {
+        "role": "primary",
+        "displayName": "Amber Pale",
+        "canonical": "#f8d3a8",
+        "tonalRamp": [
+          "#1c0300",
+          "#381c00",
+          "#57390e",
+          "#77572f",
+          "#98764e",
+          "#ba976e",
+          "#e1bd93",
+          "#ffead1"
+        ]
+      },
+      "amber-ink": {
+        "role": "primary",
+        "displayName": "Amber Ink",
+        "canonical": "#9a5218",
+        "tonalRamp": [
+          "#2a0000",
+          "#4b0500",
+          "#6c2800",
+          "#8f4807",
+          "#b26832",
+          "#d78954",
+          "#ffaf79",
+          "#ffe3c3"
+        ]
+      },
+      "fog": {
+        "role": "neutral",
+        "displayName": "Fog",
+        "canonical": "#dfe8ee",
+        "tonalRamp": [
+          "#060c10",
+          "#1e2529",
+          "#3a4146",
+          "#575f64",
+          "#767f84",
+          "#97a0a5",
+          "#bdc6cb",
+          "#eaeff3"
+        ]
+      },
+      "pane-glass": {
+        "role": "neutral",
+        "displayName": "Pane Glass",
+        "canonical": "#e6eef3",
+        "tonalRamp": [
+          "#070c0f",
+          "#1f2529",
+          "#3a4145",
+          "#585f63",
+          "#777e83",
+          "#98a0a4",
+          "#bec5ca",
+          "#eaeff2"
+        ]
+      },
+      "pane-glass-deep": {
+        "role": "neutral",
+        "displayName": "Pane Glass Deep",
+        "canonical": "#d6e2ea",
+        "tonalRamp": [
+          "#050c11",
+          "#1c252b",
+          "#384148",
+          "#555f66",
+          "#747f86",
+          "#95a0a8",
+          "#bac6ce",
+          "#e8f0f5"
+        ]
+      },
+      "field-face": {
+        "role": "neutral",
+        "displayName": "Field Face",
+        "canonical": "#fbfcfd",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#232425",
+          "#3f4041",
+          "#5d5e5e",
+          "#7c7d7e",
+          "#9d9e9f",
+          "#c3c4c5",
+          "#eeeeef"
+        ]
+      },
+      "field-line": {
+        "role": "neutral",
+        "displayName": "Field Line",
+        "canonical": "#c3cfd9",
+        "tonalRamp": [
+          "#050c13",
+          "#1c252d",
+          "#374149",
+          "#555f68",
+          "#747f88",
+          "#95a0aa",
+          "#bac6d0",
+          "#e8f0f6"
+        ]
+      },
+      "field-placeholder": {
+        "role": "neutral",
+        "displayName": "Field Placeholder",
+        "canonical": "#5f7183",
+        "tonalRamp": [
+          "#010c19",
+          "#162535",
+          "#314252",
+          "#4e6071",
+          "#6d8092",
+          "#8ea1b4",
+          "#b3c7db",
+          "#e4f0fd"
+        ]
+      },
+      "error": {
+        "role": "error",
+        "displayName": "Error",
+        "canonical": "#b23a2a",
+        "tonalRamp": [
+          "#360000",
+          "#5a0000",
+          "#7f0000",
+          "#a42c1d",
+          "#ca503f",
+          "#f1735f",
+          "#ff9984",
+          "#ffd7c8"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; 900 uppercase, second line in Dusk Amber."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headlines, 900 uppercase; close headline runs larger."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Pane and form headings, 900 uppercase."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "One paragraph under each headline, max 52ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, sentence case."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Form labels and legends, sentence case."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Button text, sentence case."
+      },
+      "credential": {
+        "displayName": "Credential",
+        "purpose": "Credential items on the amber strip, uppercase."
+      }
+    },
+    "shadows": [
+      {
+        "name": "frame-drop",
+        "value": "0 40px 70px -30px rgba(4,12,24,.8), 0 12px 24px -8px rgba(4,12,24,.45)",
+        "purpose": "Vinyl frame on the navy wall."
+      },
+      {
+        "name": "lift",
+        "value": "0 18px 40px -18px rgba(8,20,36,.55), 0 4px 10px rgba(8,20,36,.18)",
+        "purpose": "Vinyl frame on the vinyl ground."
+      },
+      {
+        "name": "pane-inset",
+        "value": "inset 0 5px 10px -4px rgba(0,0,0,.27)",
+        "purpose": "Glass pane recessed under its frame."
+      },
+      {
+        "name": "glass-inset",
+        "value": "inset 0 6px 12px -4px rgba(0,0,0,.38), inset 0 -2px 8px rgba(0,0,0,.16)",
+        "purpose": "Hero glass."
+      },
+      {
+        "name": "sash",
+        "value": "inset 0 5px 9px -3px rgba(0,0,0,.32), 0 2px 6px rgba(0,0,0,.2)",
+        "purpose": "Double-hung sash borders."
+      },
+      {
+        "name": "card-rest",
+        "value": "0 10px 24px -16px rgba(8,20,36,.45), 0 2px 4px rgba(8,20,36,.06)",
+        "purpose": "Window-type rows at rest."
+      },
+      {
+        "name": "card-hover",
+        "value": "0 16px 30px -16px rgba(8,20,36,.5), 0 2px 4px rgba(8,20,36,.06)",
+        "purpose": "Window-type rows on hover, with a 2px rise."
+      },
+      {
+        "name": "button",
+        "value": "0 8px 18px -8px rgba(8,20,36,.5)",
+        "purpose": "Amber buttons only."
+      },
+      {
+        "name": "sill",
+        "value": "0 16px 24px -10px rgba(4,12,24,.7)",
+        "purpose": "Sill under the hero window."
+      },
+      {
+        "name": "sticky",
+        "value": "0 -10px 24px -12px rgba(4,12,24,.6)",
+        "purpose": "Phone sticky bar, with backdrop-filter blur(10px) over 94% Deep Wall."
+      },
+      {
+        "name": "focus-ring",
+        "value": "outline: 3px solid #f2a65a; outline-offset: 3px",
+        "purpose": "Global :focus-visible."
+      },
+      {
+        "name": "field-focus",
+        "value": "border-color: #d9823a; box-shadow: 0 0 0 4px rgba(242,166,90,.3)",
+        "purpose": "Field focus."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-settle",
+        "value": "cubic-bezier(.2,.8,.2,1)",
+        "purpose": "All UI transitions."
+      },
+      {
+        "name": "duration-field",
+        "value": "150ms",
+        "purpose": "Field and chip border/ring."
+      },
+      {
+        "name": "duration-button",
+        "value": "200ms",
+        "purpose": "Buttons; press scale(.97)."
+      },
+      {
+        "name": "duration-card",
+        "value": "250ms",
+        "purpose": "Type-row lift and arrow nudge."
+      },
+      {
+        "name": "duration-sticky",
+        "value": "350ms",
+        "purpose": "Sticky bar slide."
+      },
+      {
+        "name": "duration-hint",
+        "value": "600ms",
+        "purpose": "Wipe hint fade."
+      },
+      {
+        "name": "loop",
+        "value": "single shared requestAnimationFrame; dt capped at 50ms",
+        "purpose": "Every animated task registers here; loop stops when no task is active."
+      },
+      {
+        "name": "offscreen-pause",
+        "value": "IntersectionObserver rootMargin 80px",
+        "purpose": "Each task runs only while visible."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "no rAF; still pre-wiped fog frame; hint hidden; scroll-behavior auto",
+        "purpose": "prefers-reduced-motion: reduce."
+      },
+      {
+        "name": "fog-engine-C",
+        "value": "FOG_SCALE .34, FOG_OPACITY .74, REFOG .16/s, WIPE_R 30, DROPS 80 (42 phone), PUSH_R 52, BREAK 13, SPRING 38, DAMP 6.5, GROW .07, RUN_AT 5.4, RUN_MAX 150, GHOST_EVERY 9, STREAKS 44 (26 phone)",
+        "purpose": "Tunable constants of the fogged glass engine."
+      },
+      {
+        "name": "seam-C",
+        "value": "STEP 20, SWELL 9, RIPPLE 3.2, SPEED 1.5, BUMP 16",
+        "purpose": "Tunable constants of the water-line seams."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "fields-2col",
+        "value": "560px"
+      },
+      {
+        "name": "phone-max",
+        "value": "759px"
+      },
+      {
+        "name": "tablet",
+        "value": "760px"
+      },
+      {
+        "name": "creds-row",
+        "value": "860px"
+      },
+      {
+        "name": "split",
+        "value": "900px"
+      },
+      {
+        "name": "estimate-split",
+        "value": "960px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Dusk Amber pill for every primary action; leads with a line icon.",
+      "html": "<a class=\"ds-btn ds-btn-amber\" href=\"#\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 5.5h16v10H10l-4.5 3.5v-3.5H4z\"/><path d=\"M8 9.5h8M8 12.5h5\"/></svg>Text for an estimate</a>",
+      "css": ":host{--wall:#1a3049;--vinyl:#f6f7f5;--vinyl-2:#e3e7e9;--ink:#15283c;--ink-soft:#3e5266;--on-wall:#eef3f7;--amber:#f2a65a;--amber-deep:#d9823a;--amber-ink:#9a5218} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:56px;padding:0 1.4em;border-radius:999px;font:800 1rem/1 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;letter-spacing:.01em;text-decoration:none;cursor:pointer;border:2px solid var(--amber);transition:transform .2s cubic-bezier(.2,.8,.2,1),background-color .2s,color .2s} .ds-btn:active{transform:scale(.97)} .ds-btn:focus-visible{outline:3px solid var(--amber);outline-offset:3px} .ds-btn-amber{background:var(--amber);color:var(--ink);box-shadow:0 8px 18px -8px rgba(8,20,36,.5)} .ds-btn-amber:hover{background:#f6b673}"
+    },
+    {
+      "name": "Line Button (on wall)",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Second channel beside the amber button on the navy wall.",
+      "html": "<div class=\"ds-wall\"><a class=\"ds-btn ds-btn-line\" href=\"#\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 3.5h3.2l1.6 4.2-2.1 1.4a11 11 0 0 0 5.2 5.2l1.4-2.1 4.2 1.6V17a2.5 2.5 0 0 1-2.7 2.5C9.4 19 5 14.6 4.5 6.2A2.5 2.5 0 0 1 5 3.5Z\"/></svg>Call (609) 384-9030</a></div>",
+      "css": ":host{--wall:#1a3049;--vinyl:#f6f7f5;--vinyl-2:#e3e7e9;--ink:#15283c;--ink-soft:#3e5266;--on-wall:#eef3f7;--amber:#f2a65a;--amber-deep:#d9823a;--amber-ink:#9a5218} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:56px;padding:0 1.4em;border-radius:999px;font:800 1rem/1 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;letter-spacing:.01em;text-decoration:none;cursor:pointer;border:2px solid var(--amber);transition:transform .2s cubic-bezier(.2,.8,.2,1),background-color .2s,color .2s} .ds-btn:active{transform:scale(.97)} .ds-btn:focus-visible{outline:3px solid var(--amber);outline-offset:3px} .ds-wall{background:var(--wall);padding:24px} .ds-btn-line{background:transparent;color:var(--on-wall)} .ds-btn-line:hover{background:rgba(242,166,90,.14)}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Form input on the glass pane; amber border and ring on focus.",
+      "html": "<label class=\"ds-label\" for=\"ds-n\">Name</label><input class=\"ds-field\" id=\"ds-n\" placeholder=\"e.g. 12 Bay Ave, Barnegat\">",
+      "css": ":host{--wall:#1a3049;--vinyl:#f6f7f5;--vinyl-2:#e3e7e9;--ink:#15283c;--ink-soft:#3e5266;--on-wall:#eef3f7;--amber:#f2a65a;--amber-deep:#d9823a;--amber-ink:#9a5218} .ds-label{display:block;font:800 .92rem/1.55 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;color:var(--ink);margin-bottom:6px} .ds-field{width:100%;box-sizing:border-box;font:500 1.02rem/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;color:var(--ink);padding:13px 14px;border-radius:10px;border:2px solid #c3cfd9;background:#fbfcfd;transition:border-color .15s,box-shadow .15s} .ds-field::placeholder{color:#5f7183} .ds-field:hover{border-color:var(--amber-deep)} .ds-field:focus{outline:none;border-color:var(--amber-deep);box-shadow:0 0 0 4px rgba(242,166,90,.3)}"
+    },
+    {
+      "name": "Choice Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Single-choice window type; selected fills Dusk Amber.",
+      "html": "<div class=\"ds-chips\"><label><input type=\"radio\" name=\"ds-t\"><span>Double</span></label><label><input type=\"radio\" name=\"ds-t\"><span>Bay</span></label><label><input type=\"radio\" name=\"ds-t\" checked><span>Mix / not sure</span></label></div>",
+      "css": ":host{--wall:#1a3049;--vinyl:#f6f7f5;--vinyl-2:#e3e7e9;--ink:#15283c;--ink-soft:#3e5266;--on-wall:#eef3f7;--amber:#f2a65a;--amber-deep:#d9823a;--amber-ink:#9a5218} .ds-chips{display:flex;flex-wrap:wrap;gap:8px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif} .ds-chips label{position:relative} .ds-chips input{position:absolute;opacity:0;width:1px;height:1px} .ds-chips span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;cursor:pointer;border:2px solid #c3cfd9;background:#fbfcfd;color:var(--ink);font-weight:700;font-size:.95rem;transition:background-color .15s,border-color .15s} .ds-chips span:hover{border-color:var(--amber-deep)} .ds-chips input:checked+span{background:var(--amber);border-color:var(--amber)} .ds-chips input:focus-visible+span{outline:3px solid var(--amber-deep);outline-offset:2px}"
+    },
+    {
+      "name": "Window-Type Row",
+      "kind": "card",
+      "refersTo": "type-row",
+      "description": "Whole-row link: drawn window icon, uppercase name, amber arrow disc.",
+      "html": "<a class=\"ds-type\" href=\"#\"><svg class=\"ds-wicon\" viewBox=\"0 0 48 48\" aria-hidden=\"true\"><rect x=\"10\" y=\"4\" width=\"28\" height=\"40\" rx=\"2\"/><path d=\"M10 24h28M14 8h20v13H14zM14 27h20v13H14z\" stroke-width=\"1.6\"/></svg><span><b>Double windows</b><small>Two sashes that slide up and down.</small></span><span class=\"ds-go\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a>",
+      "css": ":host{--wall:#1a3049;--vinyl:#f6f7f5;--vinyl-2:#e3e7e9;--ink:#15283c;--ink-soft:#3e5266;--on-wall:#eef3f7;--amber:#f2a65a;--amber-deep:#d9823a;--amber-ink:#9a5218} .ds-type{display:grid;grid-template-columns:56px 1fr 44px;gap:16px;align-items:center;padding:16px 16px 16px 14px;border-radius:14px;text-decoration:none;color:var(--ink);background:#fdfdfc;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;box-shadow:0 10px 24px -16px rgba(8,20,36,.45),0 2px 4px rgba(8,20,36,.06);transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s} .ds-type:hover{transform:translateY(-2px);box-shadow:0 16px 30px -16px rgba(8,20,36,.5),0 2px 4px rgba(8,20,36,.06)} .ds-type:focus-visible{outline:3px solid var(--amber);outline-offset:3px} .ds-type b{display:block;font-weight:900;text-transform:uppercase;font-size:1.12rem} .ds-type small{display:block;margin-top:3px;color:var(--ink-soft);font-size:.95rem;line-height:1.4} .ds-wicon{width:56px;height:56px;fill:#dfe8ee;stroke:#24405e;stroke-width:2;stroke-linejoin:round} .ds-go{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--amber);color:var(--ink);transition:transform .25s cubic-bezier(.2,.8,.2,1)} .ds-type:hover .ds-go{transform:translateX(3px)}"
+    },
+    {
+      "name": "Four-Lite Window",
+      "kind": "custom",
+      "refersTo": "vinyl-frame",
+      "description": "Vinyl frame with a 14px mullion holding recessed glass panes of title plus body; no icons in panes.",
+      "html": "<div class=\"ds-lites\"><div class=\"ds-lite\"><h3>Lower energy bills</h3><p>Built to hold heat in through the winter.</p></div><div class=\"ds-lite\"><h3>Nothing to paint</h3><p>Vinyl frames don't peel, rot or need scraping.</p></div></div>",
+      "css": ":host{--wall:#1a3049;--vinyl:#f6f7f5;--vinyl-2:#e3e7e9;--ink:#15283c;--ink-soft:#3e5266;--on-wall:#eef3f7;--amber:#f2a65a;--amber-deep:#d9823a;--amber-ink:#9a5218} .ds-lites{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:14px;border-radius:12px;background:linear-gradient(160deg,#fff,var(--vinyl-2));box-shadow:0 18px 40px -18px rgba(8,20,36,.55),0 4px 10px rgba(8,20,36,.18);font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif} .ds-lite{padding:26px;border-radius:4px;background:linear-gradient(170deg,#e6eef3,#d6e2ea);box-shadow:inset 0 5px 10px -4px rgba(0,0,0,.27);color:var(--ink)} .ds-lite h3{margin:0;font-size:1.5rem;font-weight:900;line-height:1.02;text-transform:uppercase} .ds-lite p{margin:8px 0 0;color:var(--ink-soft);line-height:1.55}"
+    },
+    {
+      "name": "Double-Hung Window",
+      "kind": "custom",
+      "refersTo": "vinyl-frame",
+      "description": "Hero frame: two sashes, meeting rail with lock, overhanging sill, fogged dusk glass (static fallback shown; the live version is the canvas engine).",
+      "html": "<div class=\"ds-win\"><div class=\"ds-frame\"><div class=\"ds-glass\"><div class=\"ds-sash ds-up\"></div><div class=\"ds-sash ds-low\"></div><div class=\"ds-rail\"></div></div></div><div class=\"ds-sill\"></div></div>",
+      "css": ".ds-win{width:220px;padding:24px;background:#1a3049} .ds-frame{padding:12px;border-radius:3px;background:linear-gradient(160deg,#fff 0%,#f6f7f5 45%,#e3e7e9 100%);box-shadow:0 40px 70px -30px rgba(4,12,24,.8),0 12px 24px -8px rgba(4,12,24,.45)} .ds-glass{position:relative;aspect-ratio:4/5;border-radius:4px;overflow:hidden;background:linear-gradient(rgba(214,226,235,.74),rgba(222,232,240,.82)),linear-gradient(#22405f 0%,#46607d 38%,#e9a46a 58%,#2a4764 60%,#1e3753 100%)} .ds-sash{position:absolute;left:0;right:0;height:calc(50% + 4px);border:6px solid #fff;box-sizing:border-box;box-shadow:inset 0 5px 9px -3px rgba(0,0,0,.32),0 2px 6px rgba(0,0,0,.2)} .ds-up{top:0} .ds-low{bottom:0;z-index:1} .ds-rail{position:absolute;z-index:2;left:0;right:0;top:50%;height:18px;transform:translateY(-50%);border-radius:3px;background:linear-gradient(#fff,#f6f7f5 50%,#e3e7e9);box-shadow:0 6px 10px -3px rgba(0,0,0,.34)} .ds-rail::after{content:'';position:absolute;left:50%;top:3px;width:30px;height:9px;margin-left:-15px;border-radius:5px;background:linear-gradient(#c9c2b5,#a9a194)} .ds-sill{height:12px;margin:0 -10px;border-radius:4px;background:linear-gradient(#fff,#e3e7e9);box-shadow:0 16px 24px -10px rgba(4,12,24,.7)}"
+    },
+    {
+      "name": "Credentials Strip",
+      "kind": "custom",
+      "refersTo": "credentials-strip",
+      "description": "Full-bleed amber band, 900 uppercase credentials with line icons; seams on both edges in the live page.",
+      "html": "<ul class=\"ds-creds\"><li><svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 3l7.5 3v5.5c0 4.6-3.2 8.2-7.5 9.5-4.3-1.3-7.5-4.9-7.5-9.5V6z\"/><path d=\"M8.6 12.2l2.4 2.4 4.4-4.6\"/></svg><span>Licensed<small>NJ HIC #13VH10689900</small></span></li></ul>",
+      "css": ":host{--wall:#1a3049;--vinyl:#f6f7f5;--vinyl-2:#e3e7e9;--ink:#15283c;--ink-soft:#3e5266;--on-wall:#eef3f7;--amber:#f2a65a;--amber-deep:#d9823a;--amber-ink:#9a5218} .ds-creds{list-style:none;margin:0;padding:30px 24px;background:var(--amber);color:var(--ink);font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif} .ds-creds li{display:flex;align-items:center;gap:10px;font-weight:900;text-transform:uppercase;letter-spacing:.03em;font-size:.98rem;line-height:1.15} .ds-creds small{display:block;font-size:.78rem;font-weight:700;letter-spacing:.01em;text-transform:none;margin-top:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Fogged Window at Dusk",
+    "overview": "The page is the installer's product. A navy wall at dusk holds white vinyl windows, and every content container is either a pane of glass in a vinyl frame or the wall around it. The hero is a working double-hung window: fogged condensation you wipe clear with a finger or cursor, beads that get shoved and spring back, heavy beads that run and leave a streak, and a dusk scene over the bay behind it. Amber is the light coming in off the bay, and it marks every action.\n\nDensity is low and direct, like a flyer: one heavy uppercase headline per section, one short lede, then something you can press. Sections alternate between the navy wall and the white vinyl ground. Animated water-line seams straddle each boundary, so you never see a hard edge between sections. Depth is physical. Frames cast long soft drop shadows onto the wall, and glass sits recessed under an inset shadow from the frame above it.\n\nThis system was recorded after an unattended, code-led build. The direction was unseeded: no concept-seed roll, fogged window chosen first of six worlds, with drafts-and-curtains as the runner-up. A finish review's eight material fixes were all applied before this record: real double-hung sash structure, white vinyl tokens, seams straddling section edges with shaded beads, `amber-ink` for amber text on light grounds, card icons removed from the four-lite panes, focus moved to the confirmation, and seams around the credentials strip. No raster assets ship. Every image is CSS, inline SVG, or canvas painted at runtime.",
+    "keyCharacteristics": [
+      "Dusk navy wall, white vinyl frames with soft bevel gradients, blue-white fogged glass, one amber light.",
+      "Heavy uppercase system sans for headings; sentence case for body, buttons and labels.",
+      "Content sits in panes: recessed glass inside vinyl frames, separated by a 14px mullion.",
+      "Water-line seams with riding beads straddle every section boundary.",
+      "One rAF loop for all motion. Motion pauses off-screen, and reduced motion gets a still, pre-wiped frame."
+    ],
+    "rules": [
+      {
+        "name": "The Dusk Light Rule",
+        "body": "Amber is the only warm color and it means \"act here\" or \"this is the light.\" Every primary action is amber, and no other hue is introduced for emphasis.",
+        "section": "colors"
+      },
+      {
+        "name": "The Amber Ink Rule",
+        "body": "Dusk Amber is never text on a light ground. Amber words on vinyl or glass use Amber Ink. Dusk Amber text appears only on the navy wall.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Grounds Rule",
+        "body": "Sections alternate wall and vinyl. The amber credentials strip is the single exception, and it is still bounded by seams on both sides.",
+        "section": "colors"
+      },
+      {
+        "name": "The Heavy Caps Rule",
+        "body": "Only headings, titles, the wordmark and credentials are 900 uppercase. Buttons, labels, ledes and body stay in sentence case at 800 or less, so the caps keep their punch.",
+        "section": "typography"
+      },
+      {
+        "name": "The Balanced Head Rule",
+        "body": "Headings use `text-wrap: balance` and paragraphs `text-wrap: pretty`. Long headlines break by hand (`<br>`) at the phrase, as in \"New windows. / Installed sooner.\"",
+        "section": "typography"
+      },
+      {
+        "name": "The Light From Above Rule",
+        "body": "Shadows fall down. Drop shadows have positive y-offsets and negative spread, and inset shadows come from the top edge. A shadow that points sideways or up is wrong.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do put important content in a window: a vinyl frame (12px, 14px mullion) holding recessed glass panes (4px, pane inset).",
+      "Do make every primary action a Dusk Amber pill at least 56px tall, paired with a line button for the other channel.",
+      "Do use Amber Ink for any amber text on vinyl, glass or white.",
+      "Do separate sections with a seam that straddles the edge and fills with the next section's color, including around the amber strip.",
+      "Do register any new animation with the shared loop, gate it with `watchVisible`, give it a still reduced-motion frame, and expose its tunables in a `C` object.",
+      "Do draw water as filled, shaded beads with one soft highlight.",
+      "Do keep headings 900 uppercase and everything else sentence case.",
+      "Do paint imagery in CSS, SVG or canvas. If real install photos arrive, they go inside vinyl frames as glass panes."
+    ],
+    "donts": [
+      "Don't use the contractor template the thesis refuses: a stock house photo, a blue banner, or a grid of service cards.",
+      "Don't set Dusk Amber text on a light ground, or introduce a second accent hue.",
+      "Don't put icons inside the four-lite glass panes. Panes hold words.",
+      "Don't draw a double-hung window without both sashes, the meeting rail and its lock. A single framed rectangle is not this product.",
+      "Don't start a second requestAnimationFrame loop or animate anything while it is off-screen.",
+      "Don't draw beads as hairline glints or outline rings.",
+      "Don't use hard offset shadows, glows or sideways shadows. Light comes from above.",
+      "Don't let a seam sit entirely inside one section or end in a straight edge.",
+      "Don't add a small uppercase label above a headline. Section openings start with the headline itself."
+    ]
+  }
+}
