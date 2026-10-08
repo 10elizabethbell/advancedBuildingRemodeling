@@ -6,16 +6,16 @@
 <title>Advanced Building and Remodeling Associates — Vinyl Replacement Windows, Ocean County NJ</title>
 <meta name="description" content="Vinyl replacement windows and Energy Star windows across all of Ocean County, NJ. Double, picture and bay windows in many styles and colors. Licensed, insured and bonded (NJ HIC #13VH10689900). Based in Manahawkin. Call (609) 384-9030.">
 <meta name="theme-color" content="#1a3049">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='2' width='26' height='28' rx='3' fill='%23f5f2ec'/%3E%3Crect x='7' y='6' width='18' height='9' fill='%23f2a65a'/%3E%3Crect x='7' y='18' width='18' height='8' fill='%2346607d'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='2' width='26' height='28' rx='3' fill='%23f6f7f5'/%3E%3Crect x='7' y='6' width='18' height='9' fill='%23f2a65a'/%3E%3Crect x='7' y='18' width='18' height='8' fill='%2346607d'/%3E%3C/svg%3E">
 <style>
   /* ---------- Tokens ---------- */
   :root {
     --wall: #1a3049;        /* dusk navy: hero, form, close grounds */
     --wall-deep: #132539;
     --wall-soft: #24405e;
-    --vinyl: #f5f2ec;       /* white vinyl: light section ground */
-    --vinyl-2: #e8e3d9;
-    --vinyl-shade: #d3ccbf;
+    --vinyl: #f6f7f5;       /* white vinyl: light section ground */
+    --vinyl-2: #e3e7e9;
+    --vinyl-shade: #cbd2d8;
     --ink: #15283c;
     --ink-soft: #3e5266;
     --on-wall: #eef3f7;
@@ -23,6 +23,7 @@
     --amber: #f2a65a;       /* dusk light over the bay: primary action */
     --amber-deep: #d9823a;
     --amber-pale: #f8d3a8;
+    --amber-ink: #9a5218;   /* amber text on light grounds */
     --fog: #dfe8ee;
     --error: #b23a2a;
     --error-on-wall: #ffb4a3;
@@ -84,7 +85,7 @@
   @media (min-width: 760px) { .top-call { display: inline-flex; } }
 
   /* ---------- Hero ---------- */
-  .hero { position: relative; color: var(--on-wall); padding: clamp(18px, 4vw, 44px) 0 clamp(64px, 8vw, 110px); }
+  .hero { position: relative; color: var(--on-wall); padding: clamp(18px, 4vw, 44px) 0 clamp(100px, 9vw, 124px); }
   .hero .wrap { display: grid; gap: clamp(28px, 5vw, 64px); align-items: center; }
   @media (min-width: 900px) { .hero .wrap { grid-template-columns: 1.05fr .95fr; } }
   .hero h1 { font-size: clamp(2.5rem, 6.4vw, 5.1rem); }
@@ -100,8 +101,8 @@
   /* The window: a white vinyl double-hung frame you look through */
   .window { position: relative; justify-self: center; width: min(100%, 470px); }
   .frame {
-    position: relative; padding: 16px; border-radius: 12px;
-    background: linear-gradient(160deg, #fdfcf9 0%, var(--vinyl) 45%, var(--vinyl-2) 100%);
+    position: relative; padding: 20px; border-radius: 3px;
+    background: linear-gradient(160deg, #ffffff 0%, var(--vinyl) 45%, var(--vinyl-2) 100%);
     box-shadow: 0 40px 70px -30px rgba(4, 12, 24, .8), 0 12px 24px -8px rgba(4, 12, 24, .45);
   }
   .glass {
@@ -112,50 +113,55 @@
       linear-gradient(rgba(214, 226, 235, .74), rgba(222, 232, 240, .82)),
       linear-gradient(#22405f 0%, #46607d 38%, #e9a46a 58%, #2a4764 60%, #1e3753 100%);
   }
-  .glass.live { background: #22405f; }
   .glass canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
   #glass-fog { opacity: .74; }
   #glass-fog, #glass-blur { filter: blur(3px); transform: scale(1.03); }
   .glass::after { /* the frame's inner shadow falling onto the glass */
     content: ""; position: absolute; inset: 0; pointer-events: none;
-    box-shadow: inset 0 6px 12px -4px rgba(20, 40, 60, .45), inset 0 -2px 8px rgba(20, 40, 60, .2);
+    box-shadow: inset 0 6px 12px -4px rgba(0, 0, 0, .38), inset 0 -2px 8px rgba(0, 0, 0, .16);
   }
+  .sash-up, .sash-low { /* the two sash frames; the lower one sits in front */
+    position: absolute; left: 0; right: 0; height: calc(50% + 4px); pointer-events: none;
+    border: 9px solid #fff;
+    box-shadow: inset 0 5px 9px -3px rgba(0, 0, 0, .32), 0 2px 6px rgba(0, 0, 0, .2);
+  }
+  .sash-up { top: 0; }
+  .sash-low { bottom: 0; z-index: 1; }
   .rail { /* meeting rail between the two sashes */
-    position: absolute; left: 6px; right: 6px; top: 50%; height: 22px; transform: translateY(-50%);
+    position: absolute; z-index: 2; left: 0; right: 0; top: 50%; height: 28px; transform: translateY(-50%);
     border-radius: 3px; pointer-events: none;
-    background: linear-gradient(#fdfcf9, var(--vinyl) 50%, var(--vinyl-2));
-    box-shadow: 0 6px 10px -3px rgba(20, 40, 60, .4);
+    background: linear-gradient(#ffffff, var(--vinyl) 50%, var(--vinyl-2));
+    box-shadow: 0 6px 10px -3px rgba(0, 0, 0, 0.34);
   }
   .rail::after { /* sash lock */
     content: ""; position: absolute; left: 50%; top: 4px; width: 46px; height: 14px; margin-left: -23px;
     border-radius: 7px; background: linear-gradient(#c9c2b5, #a9a194);
-    box-shadow: 0 2px 4px rgba(20, 40, 60, .35);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.30);
   }
   .sill {
     height: 18px; margin: 0 -14px; border-radius: 4px;
-    background: linear-gradient(#fdfcf9, var(--vinyl-2));
+    background: linear-gradient(#ffffff, var(--vinyl-2));
     box-shadow: 0 16px 24px -10px rgba(4, 12, 24, .7);
   }
   .hint {
     position: absolute; left: 50%; bottom: 14%; transform: translateX(-50%);
     display: inline-flex; align-items: center; gap: 8px; padding: 9px 15px; border-radius: 999px;
     background: rgba(21, 40, 60, .78); color: var(--on-wall); font-size: .88rem; font-weight: 700;
-    pointer-events: none; white-space: nowrap; transition: opacity .6s ease;
+    z-index: 3; pointer-events: none; white-space: nowrap; transition: opacity .6s ease;
   }
   .hint .icon { width: 18px; height: 18px; }
   .hint.gone { opacity: 0; }
 
   /* ---------- Seams: animated water lines between sections ---------- */
-  .seam { position: relative; z-index: 2; display: block; width: 100%; height: 70px; margin-top: -69px; pointer-events: none; }
+  .seam { position: absolute; left: 0; top: -69px; margin: 0; z-index: 2; display: block; width: 100%; height: 70px; pointer-events: none; }
   .seam .fill { fill: var(--next); }
   .seam .l1 { stroke: rgba(223, 232, 238, .55); }
   .seam .l2 { stroke: var(--amber); }
   .seam .l3 { stroke: rgba(223, 232, 238, .3); }
   .seam path:not(.fill) { fill: none; stroke-width: 2; vector-effect: non-scaling-stroke; }
-  .seam circle { fill: rgba(240, 246, 250, .9); }
+  .seam circle, .seam.to-wall circle { fill: url(#bead); }
   .seam.to-wall .l1 { stroke: rgba(70, 96, 125, .45); }
   .seam.to-wall .l3 { stroke: rgba(70, 96, 125, .28); }
-  .seam.to-wall circle { fill: #9fb4c6; }
 
   /* ---------- Sections ---------- */
   .sec { position: relative; padding: clamp(56px, 8vw, 104px) 0 clamp(80px, 10vw, 130px); }
@@ -169,12 +175,12 @@
   /* Window types: whole row is the link, one arrow cue each */
   .types-grid { display: grid; gap: clamp(28px, 4vw, 56px); }
   @media (min-width: 900px) { .types-grid { grid-template-columns: .9fr 1.1fr; align-items: start; } }
-  .flyer { margin-top: 18px; font-weight: 900; text-transform: uppercase; letter-spacing: .02em; font-size: .95rem; color: var(--amber-deep); max-width: 40ch; }
+  .flyer { margin-top: 18px; font-weight: 900; text-transform: uppercase; letter-spacing: .02em; font-size: .95rem; color: var(--amber-ink); max-width: 40ch; }
   .types { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
   .type {
     display: grid; grid-template-columns: 56px 1fr 44px; gap: 16px; align-items: center;
     padding: 16px 16px 16px 14px; border-radius: var(--radius); text-decoration: none; color: var(--ink);
-    background: #fbfaf7; box-shadow: 0 10px 24px -16px rgba(8, 20, 36, .45), 0 2px 4px rgba(8, 20, 36, .06);
+    background: #fdfdfc; box-shadow: 0 10px 24px -16px rgba(8, 20, 36, .45), 0 2px 4px rgba(8, 20, 36, .06);
     transition: transform .25s cubic-bezier(.2,.8,.2,1), box-shadow .25s;
   }
   .type:hover { transform: translateY(-2px); box-shadow: 0 16px 30px -16px rgba(8, 20, 36, .5), 0 2px 4px rgba(8, 20, 36, .06); }
@@ -189,17 +195,16 @@
   /* Why vinyl: a four-lite window of reasons */
   .lites {
     margin-top: clamp(32px, 5vw, 52px); display: grid; gap: 14px; padding: 14px; border-radius: 12px;
-    background: linear-gradient(160deg, #fdfcf9, var(--vinyl-2));
+    background: linear-gradient(160deg, #ffffff, var(--vinyl-2));
     box-shadow: var(--shadow-lift);
   }
   @media (min-width: 760px) { .lites { grid-template-columns: 1fr 1fr; } }
   .lite {
     position: relative; padding: clamp(22px, 3vw, 34px); border-radius: 4px; overflow: hidden;
     background: linear-gradient(170deg, #e6eef3 0%, #d6e2ea 100%);
-    box-shadow: inset 0 5px 10px -4px rgba(20, 40, 60, .32);
+    box-shadow: inset 0 5px 10px -4px rgba(0, 0, 0, 0.27);
   }
-  .lite .icon { width: 34px; height: 34px; color: var(--wall-soft); stroke-width: 1.8; }
-  .lite h3 { margin-top: 16px; font-size: 1.35rem; font-weight: 900; text-transform: uppercase; letter-spacing: .005em; }
+  .lite h3 { margin-top: 0; font-size: 1.5rem; font-weight: 900; text-transform: uppercase; letter-spacing: .005em; }
   .lite p { margin-top: 8px; color: var(--ink-soft); max-width: 40ch; }
 
   /* Estimate form */
@@ -218,13 +223,13 @@
 
   .sash {
     padding: 14px; border-radius: 12px;
-    background: linear-gradient(160deg, #fdfcf9, var(--vinyl) 45%, var(--vinyl-2));
+    background: linear-gradient(160deg, #ffffff, var(--vinyl) 45%, var(--vinyl-2));
     box-shadow: 0 40px 70px -30px rgba(4, 12, 24, .8), 0 12px 24px -8px rgba(4, 12, 24, .45);
   }
   form.quote {
     padding: clamp(20px, 3.4vw, 34px); border-radius: 4px; color: var(--ink);
     background: linear-gradient(170deg, #eef3f6, #e1e9ef);
-    box-shadow: inset 0 5px 10px -4px rgba(20, 40, 60, .3);
+    box-shadow: inset 0 5px 10px -4px rgba(0, 0, 0, 0.26);
   }
   .quote h3 { font-size: 1.5rem; font-weight: 900; text-transform: uppercase; }
   .quote .sub { margin-top: 6px; color: var(--ink-soft); font-size: .96rem; }
@@ -269,6 +274,8 @@
   .sent { display: none; }
   .quote.done .fields, .quote.done > .btn, .quote.done > .fine, .quote.done > .sub { display: none; }
   .quote.done .sent { display: block; }
+  .quote.done > h3:first-child { display: none; }
+  .sent h3:focus { outline: none; }
   .sent p { margin-top: 10px; color: var(--ink-soft); }
   .sent pre {
     margin: 16px 0 0; padding: 14px 16px; border-radius: 10px; background: #fbfcfd; border: 2px solid #c3cfd9;
@@ -279,7 +286,7 @@
   .sent .again { margin-top: 14px; background: none; border: 0; padding: 8px 0; font: 700 .92rem var(--font); color: var(--ink-soft); text-decoration: underline; cursor: pointer; }
 
   /* Credentials strip */
-  .creds { background: var(--amber); color: var(--ink); padding: 26px 0; }
+  .creds { position: relative; background: var(--amber); color: var(--ink); padding: 30px 0 64px; }
   .creds ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 16px 20px; }
   @media (min-width: 860px) { .creds ul { grid-template-columns: repeat(4, auto); justify-content: space-between; } }
   .creds li { display: flex; align-items: center; gap: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: .03em; font-size: .98rem; line-height: 1.15; }
@@ -299,7 +306,7 @@
   @media (min-width: 560px) { .towns { columns: 3; } }
   .towns li { padding: 6px 0; break-inside: avoid; border-bottom: 1px solid var(--vinyl-shade); }
   .towns li.home { font-weight: 900; color: var(--ink); }
-  .towns li.home span { display: block; font-size: .8rem; font-weight: 700; color: var(--amber-deep); text-transform: uppercase; letter-spacing: .04em; }
+  .towns li.home span { display: block; font-size: .8rem; font-weight: 700; color: var(--amber-ink); text-transform: uppercase; letter-spacing: .04em; }
   .towns-note { margin-top: 14px; font-size: .9rem; color: var(--ink-soft); }
 
   /* Close + footer */
@@ -341,6 +348,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
+    <radialGradient id="bead" cx=".42" cy=".38"><stop offset="0" stop-color="rgb(250,236,214)" stop-opacity=".9"/><stop offset=".55" stop-color="rgb(160,184,204)" stop-opacity=".6"/><stop offset="1" stop-color="rgb(48,72,98)" stop-opacity=".8"/></radialGradient>
     <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3.5h3.2l1.6 4.2-2.1 1.4a11 11 0 0 0 5.2 5.2l1.4-2.1 4.2 1.6V17a2.5 2.5 0 0 1-2.7 2.5C9.4 19 5 14.6 4.5 6.2A2.5 2.5 0 0 1 5 3.5Z"/></symbol>
     <symbol id="i-text" viewBox="0 0 24 24"><path d="M4 5.5h16v10H10l-4.5 3.5v-3.5H4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
     <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7.5 3v5.5c0 4.6-3.2 8.2-7.5 9.5-4.3-1.3-7.5-4.9-7.5-9.5V6z"/><path d="M8.6 12.2l2.4 2.4 4.4-4.6"/></symbol>
@@ -359,7 +367,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <symbol id="i-minus" viewBox="0 0 24 24"><path d="M6 12h12"/></symbol>
     <symbol id="i-plus" viewBox="0 0 24 24"><path d="M6 12h12M12 6v12"/></symbol>
     <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H8"/></symbol>
-    <symbol id="i-window" viewBox="0 0 38 42"><rect x="1" y="1" width="36" height="40" rx="4" fill="#f5f2ec" stroke="none"/><rect x="5" y="5" width="28" height="15" rx="1.5" fill="#f2a65a" stroke="none"/><rect x="5" y="23" width="28" height="14" rx="1.5" fill="#46607d" stroke="none"/><rect x="5" y="23" width="28" height="5" fill="#dfe8ee" opacity=".7" stroke="none"/></symbol>
+    <symbol id="i-window" viewBox="0 0 38 42"><rect x="1" y="1" width="36" height="40" rx="4" fill="#f6f7f5" stroke="none"/><rect x="5" y="5" width="28" height="15" rx="1.5" fill="#f2a65a" stroke="none"/><rect x="5" y="23" width="28" height="14" rx="1.5" fill="#46607d" stroke="none"/><rect x="5" y="23" width="28" height="5" fill="#dfe8ee" opacity=".7" stroke="none"/></symbol>
   </defs>
 </svg>
 
@@ -396,6 +404,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <div class="frame">
           <div class="glass" id="glass" role="img" aria-label="A fogged double-hung window at dusk over the bay. Wipe it with your finger or mouse to clear the glass.">
             <canvas id="glass-cv" aria-hidden="true"></canvas><canvas id="glass-blur" aria-hidden="true"></canvas><canvas id="glass-fog" aria-hidden="true"></canvas><canvas id="glass-drops" aria-hidden="true"></canvas>
+            <div class="sash-up"></div><div class="sash-low"></div>
             <div class="rail"></div>
             <div class="hint" id="hint"><svg class="icon" aria-hidden="true"><use href="#i-hand"/></svg>Wipe the glass</div>
           </div>
@@ -407,7 +416,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
   <section class="on-vinyl sec" id="windows" aria-labelledby="types-h">
     <svg class="seam" style="--next: var(--vinyl)" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
-      <path class="fill"/><path class="l3"/><path class="l1"/><path class="l2"/><circle r="4"/><circle r="3"/><circle r="5"/>
+      <path class="fill"/><path class="l3"/><path class="l1"/><path class="l2"/><circle r="5"/><circle r="4"/><circle r="6.5"/>
     </svg>
     <div class="wrap">
       <div class="types-grid">
@@ -435,22 +444,18 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <p class="lede">If your windows fog up, rattle in a nor'easter or need scraping every spring, they're costing you more than they look.</p>
       <div class="lites">
         <div class="lite">
-          <svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg>
           <h3>Lower energy bills</h3>
           <p>Energy Star windows are built to hold heat in through the winter and keep it out in the summer, so your heat and A/C run less.</p>
         </div>
         <div class="lite">
-          <svg class="icon" aria-hidden="true"><use href="#i-brush"/></svg>
           <h3>Nothing to paint</h3>
           <p>Vinyl frames don't peel, rot or need scraping. Wipe them down and you're done.</p>
         </div>
         <div class="lite">
-          <svg class="icon" aria-hidden="true"><use href="#i-wind"/></svg>
           <h3>No more drafts</h3>
           <p>Tight-fitting sashes end the cold spot by the window, so the seat next to it is a good one again.</p>
         </div>
         <div class="lite">
-          <svg class="icon" aria-hidden="true"><use href="#i-drops"/></svg>
           <h3>No more fogged glass</h3>
           <p>Fog trapped between the panes means the seal has failed. New insulated glass gives you the view back.</p>
         </div>
@@ -460,7 +465,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
   <section class="on-wall sec" id="estimate" aria-labelledby="est-h">
     <svg class="seam to-wall" style="--next: var(--wall)" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
-      <path class="fill"/><path class="l3"/><path class="l1"/><path class="l2"/><circle r="4"/><circle r="3"/><circle r="5"/>
+      <path class="fill"/><path class="l3"/><path class="l1"/><path class="l2"/><circle r="5"/><circle r="4"/><circle r="6.5"/>
     </svg>
     <div class="wrap est">
       <div>
@@ -518,7 +523,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
           <p class="fine">Opens a text to (609) 384-9030. Nothing is stored on this site.</p>
 
           <div class="sent" id="sent" aria-live="polite">
-            <h3>Your text is ready</h3>
+            <h3 tabindex="-1">Your text is ready</h3>
             <p>If your messages app didn't open, send this to <b>(609) 384-9030</b> from your phone, or copy it.</p>
             <pre id="sent-body"></pre>
             <div class="btn-pair">
@@ -533,6 +538,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   </section>
 
   <section class="creds" aria-label="Credentials">
+    <svg class="seam" style="--next: var(--amber)" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
+      <path class="fill"/><path class="l3"/><path class="l1"/><path class="l2"/><circle r="5"/><circle r="4"/><circle r="6.5"/>
+    </svg>
     <div class="wrap">
       <ul>
         <li><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg><span>Licensed<small>NJ HIC #13VH10689900</small></span></li>
@@ -545,6 +553,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   </section>
 
   <section class="on-vinyl sec" aria-labelledby="area-h">
+    <svg class="seam to-wall" style="--next: var(--vinyl)" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
+      <path class="fill"/><path class="l3"/><path class="l1"/><path class="l2"/><circle r="5"/><circle r="4"/><circle r="6.5"/>
+    </svg>
     <div class="wrap area-grid">
       <div>
         <h2 id="area-h" class="display">Every town in Ocean County</h2>
@@ -573,7 +584,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
   <section class="on-wall sec close" aria-labelledby="close-h">
     <svg class="seam to-wall" style="--next: var(--wall)" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
-      <path class="fill"/><path class="l3"/><path class="l1"/><path class="l2"/><circle r="4"/><circle r="3"/><circle r="5"/>
+      <path class="fill"/><path class="l3"/><path class="l1"/><path class="l2"/><circle r="5"/><circle r="4"/><circle r="6.5"/>
     </svg>
     <div class="wrap">
       <h2 id="close-h" class="display">Advanced Building and Remodeling Associates</h2>
@@ -740,7 +751,8 @@ const Pointer = { x: -9999, y: -9999, vx: 0, vy: 0, t: 0 };
     fx.globalCompositeOperation = 'source-over'; fx.globalAlpha = 1; fx.drawImage(tex, 0, 0);
     fogData = null;
     drops = Array.from({ length: C.DROPS }, () => spawn(null, true));
-    if (REDUCED) { wipeLine(W * .18, H * .3, W * .82, H * .26, C.WIPE_R * 1.2); draw(0); }
+    if (REDUCED) wipeLine(W * .18, H * .42, W * .82, H * .4, C.WIPE_R * 1.2);
+    draw(0);
   }
 
   function wipe(x, y, r, k = 1) {
@@ -779,7 +791,7 @@ const Pointer = { x: -9999, y: -9999, vx: 0, vy: 0, t: 0 };
   /* Ghost finger: wipes a lazy S across the top sash so the idea reads at a glance */
   function ghostStep(dt) {
     if (!ghost) {
-      if (clock - lastTouch > (touched ? C.GHOST_EVERY * 2 : C.GHOST_EVERY) || clock < 0.7 && clock > 0.5) ghost = { t: 0, y0: rnd(.3, .38) };
+      if (clock - lastTouch > (touched ? C.GHOST_EVERY * 2 : C.GHOST_EVERY) || clock < 0.7 && clock > 0.5) ghost = { t: 0, y0: rnd(.39, .45) };
       else return;
     }
     ghost.t += dt / 1.5;
@@ -969,7 +981,7 @@ const Pointer = { x: -9999, y: -9999, vx: 0, vy: 0, t: 0 };
     const text = body(), href = 'sms:' + PHONE_NUM + '?&body=' + encodeURIComponent(text);
     el('sent-body').textContent = text; el('sent-sms').href = href;
     f.classList.add('done'); f.dataset.href = href;
-    el('sent').querySelector('h3').focus?.();
+    el('sent').querySelector('h3').focus();
     location.href = href;
   });
   el('sent-copy').addEventListener('click', async () => {
