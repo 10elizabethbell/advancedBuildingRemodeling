@@ -16,6 +16,9 @@
 - **Contact:** every call link is `tel:+16093849030`, every text link is `sms:+16093849030`. The form (name, phone, address required; type chips; window-count stepper; notes) composes one text and opens it. A fallback panel shows the message with Open text / Copy and an Edit link. The sticky phone bar hides while the hero buttons, the form or the close buttons are on screen.
 - **Motion budget:** one rAF loop. Each motion task pauses off-screen via IntersectionObserver. Reduced motion draws a still, pre-wiped frame. Phones get 42 beads instead of 80. Tunable constants are in the `C` object at the top of each IIFE.
 
+- **Phone first (taste §0):** the page is designed at 360–430px and adapted up for desktop. On phones the fogged window sits right under the Text/Call buttons, with a square glass and the wipe hint in the top sash. The sticky bar opens a prefilled text. There are no new-tab links, every tap target is 44px+, secondary text is 14px+, and nothing scrolls sideways at 360/390.
+- **Repo visibility:** private (created before the public-repo rule; left as is). `brief.md` IS committed; `src-assets/` is gitignored and empty.
+
 ## Assumptions I made
 - **No "free" anywhere.** The first brief said "Request a free estimate"; the revised brief and the flyer never say the estimate is free, so I removed it. Restore it if Joseph confirms.
 - **Hero headline** "New windows. Installed sooner." comes from his flyer ("IN STOCK & INSTALLED SOONER!", "GET NEW WINDOWS FASTER!"). The first version, "Clear glass. Warm rooms.", tied tighter to the fog world. Swap back if you prefer it.

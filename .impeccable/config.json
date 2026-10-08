@@ -110,6 +110,12 @@
         "value": "rgba(0, 0, 0, 0.30)",
         "createdAt": "2026-10-08T11:53:40.100Z",
         "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "2.3rem",
+        "createdAt": "2026-10-08T12:10:41.094Z",
+        "reason": "model triage: phone floor of the hero display size, set for Ellie's phone-first rule (taste section 0); consolidation left to Ellie"
       }
     ]
   }
