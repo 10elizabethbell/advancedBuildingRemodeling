@@ -8,6 +8,108 @@
         "value": "#14283c",
         "createdAt": "2026-10-08T11:40:19.365Z",
         "reason": "model triage: rgba(20,40,60) inset shadow is the vinyl frame's neutral navy shade falling onto the glass, not a chromatic halo"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#bead",
+        "createdAt": "2026-10-08T11:53:39.065Z",
+        "reason": "model triage: false positive, parsed from the SVG gradient reference url(#bead), not a color"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "6px",
+        "createdAt": "2026-10-08T11:53:39.130Z",
+        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "7px",
+        "createdAt": "2026-10-08T11:53:39.194Z",
+        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "1.15rem",
+        "createdAt": "2026-10-08T11:53:39.259Z",
+        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": ".78rem",
+        "createdAt": "2026-10-08T11:53:39.324Z",
+        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "1.25rem",
+        "createdAt": "2026-10-08T11:53:39.387Z",
+        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": ".88rem",
+        "createdAt": "2026-10-08T11:53:39.452Z",
+        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": ".86rem",
+        "createdAt": "2026-10-08T11:53:39.517Z",
+        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": ".8rem",
+        "createdAt": "2026-10-08T11:53:39.581Z",
+        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "4.2rem",
+        "createdAt": "2026-10-08T11:53:39.646Z",
+        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": ".85rem",
+        "createdAt": "2026-10-08T11:53:39.712Z",
+        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#e9a46a",
+        "createdAt": "2026-10-08T11:53:39.777Z",
+        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#1e3753",
+        "createdAt": "2026-10-08T11:53:39.842Z",
+        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgba(0, 0, 0, 0.34)",
+        "createdAt": "2026-10-08T11:53:39.906Z",
+        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#c9c2b5",
+        "createdAt": "2026-10-08T11:53:39.970Z",
+        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#a9a194",
+        "createdAt": "2026-10-08T11:53:40.035Z",
+        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgba(0, 0, 0, 0.30)",
+        "createdAt": "2026-10-08T11:53:40.100Z",
+        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
       }
     ]
   }

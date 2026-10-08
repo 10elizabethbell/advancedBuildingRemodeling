@@ -48,6 +48,8 @@
 - Window-type rows could show a small live fogged pane of that type on hover (desktop) instead of the static icon.
 - Use the flyer's own all-caps lines more loudly, e.g. "NEED NEW WINDOWS?" as the close headline.
 
+- **Tidy-up:** DESIGN.md records fewer values than the page uses: one-off small type sizes (.78–.88rem, 1.15rem, 1.25rem, 4.2rem), 6px/7px radii, sash-lock hardware colors and the pre-JS fallback gradient. I added narrow detector ignores for them in `.impeccable/config.json`. Folding them into the ramp, or adding them to DESIGN.md, is your call.
+
 ## Not verified
 - Real-device touch: wiping with a finger while the page scrolls (listeners are passive and `touch-action: pan-y`), and iOS Safari canvas performance.
 - The real SMS handoff on iOS and Android (`sms:+1…?&body=` format), and the Copy fallback on iOS.
