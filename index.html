@@ -1,0 +1,999 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Advanced Building and Remodeling Associates — Vinyl Replacement Windows, Ocean County NJ</title>
+<meta name="description" content="Vinyl replacement windows and Energy Star windows across all of Ocean County, NJ. Double, picture and bay windows in many styles and colors. Licensed, insured and bonded (NJ HIC #13VH10689900). Based in Manahawkin. Call (609) 384-9030.">
+<meta name="theme-color" content="#1a3049">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='2' width='26' height='28' rx='3' fill='%23f5f2ec'/%3E%3Crect x='7' y='6' width='18' height='9' fill='%23f2a65a'/%3E%3Crect x='7' y='18' width='18' height='8' fill='%2346607d'/%3E%3C/svg%3E">
+<style>
+  /* ---------- Tokens ---------- */
+  :root {
+    --wall: #1a3049;        /* dusk navy: hero, form, close grounds */
+    --wall-deep: #132539;
+    --wall-soft: #24405e;
+    --vinyl: #f5f2ec;       /* white vinyl: light section ground */
+    --vinyl-2: #e8e3d9;
+    --vinyl-shade: #d3ccbf;
+    --ink: #15283c;
+    --ink-soft: #3e5266;
+    --on-wall: #eef3f7;
+    --on-wall-soft: #b9c9d7;
+    --amber: #f2a65a;       /* dusk light over the bay: primary action */
+    --amber-deep: #d9823a;
+    --amber-pale: #f8d3a8;
+    --fog: #dfe8ee;
+    --error: #b23a2a;
+    --error-on-wall: #ffb4a3;
+    --radius: 14px;
+    --gutter: clamp(16px, 4vw, 48px);
+    --max: 1180px;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --shadow-lift: 0 18px 40px -18px rgba(8, 20, 36, .55), 0 4px 10px rgba(8, 20, 36, .18);
+  }
+
+  /* ---------- Base ---------- */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0; font-family: var(--font); font-size: 17px; line-height: 1.55;
+    color: var(--ink); background: var(--wall);
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+    caret-color: var(--amber-deep);
+  }
+  ::selection { background: var(--amber-pale); color: var(--ink); }
+  html { scrollbar-color: var(--wall-soft) var(--wall-deep); }
+  img, svg, canvas { display: block; }
+  a { color: inherit; text-underline-offset: .2em; }
+  :focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; border-radius: 6px; }
+  h1, h2, h3 { margin: 0; line-height: 1.02; text-wrap: balance; }
+  .display { font-weight: 900; text-transform: uppercase; letter-spacing: -.01em; }
+  p { margin: 0; text-wrap: pretty; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .icon { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+  /* ---------- Buttons (one component, every page) ---------- */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: .55em;
+    min-height: 56px; padding: 0 1.4em; border-radius: 999px;
+    font: 800 1rem/1 var(--font); letter-spacing: .01em; text-decoration: none; cursor: pointer; white-space: nowrap;
+    border: 2px solid var(--amber); transition: transform .2s cubic-bezier(.2,.8,.2,1), background-color .2s, color .2s, box-shadow .2s;
+    -webkit-tap-highlight-color: transparent; user-select: none;
+  }
+  .btn:active { transform: scale(.97); }
+  .btn-amber { background: var(--amber); color: var(--ink); box-shadow: 0 8px 18px -8px rgba(8, 20, 36, .5); }
+  .btn-amber:hover { background: #f6b673; }
+  .btn-line { background: transparent; color: var(--on-wall); }
+  .btn-line:hover { background: rgba(242, 166, 90, .14); }
+  .on-vinyl .btn-line { color: var(--ink); border-color: var(--amber-deep); }
+  .btn-pair { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn-pair .btn { flex: 1 1 220px; }
+
+  /* ---------- Top bar ---------- */
+  .top { position: relative; z-index: 5; color: var(--on-wall); }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 18px; padding-bottom: 6px; }
+  .mark { display: flex; align-items: center; gap: 12px; text-decoration: none; min-width: 0; }
+  .mark svg { width: 38px; height: 42px; flex: none; }
+  .mark b { display: block; font-weight: 900; text-transform: uppercase; font-size: 1.15rem; letter-spacing: .04em; line-height: 1; }
+  .mark span { display: block; font-size: .78rem; line-height: 1.25; color: var(--on-wall-soft); margin-top: 3px; }
+  .top-call { display: none; align-items: center; gap: 8px; font-weight: 800; text-decoration: none; white-space: nowrap; padding: 10px 0; }
+  .top-call:hover { color: var(--amber); }
+  @media (min-width: 760px) { .top-call { display: inline-flex; } }
+
+  /* ---------- Hero ---------- */
+  .hero { position: relative; color: var(--on-wall); padding: clamp(18px, 4vw, 44px) 0 clamp(64px, 8vw, 110px); }
+  .hero .wrap { display: grid; gap: clamp(28px, 5vw, 64px); align-items: center; }
+  @media (min-width: 900px) { .hero .wrap { grid-template-columns: 1.05fr .95fr; } }
+  .hero h1 { font-size: clamp(2.5rem, 6.4vw, 5.1rem); }
+  .hero h1 em { font-style: normal; color: var(--amber); }
+  .pitch { margin-top: 18px; font-size: clamp(1.02rem, 1.6vw, 1.25rem); color: var(--on-wall-soft); max-width: 34ch; }
+  .hero .btn-pair { margin-top: 28px; max-width: 600px; }
+  .hero-trust { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 20px; font-size: .92rem; color: var(--on-wall-soft); }
+  .hero-trust span { display: inline-flex; align-items: center; gap: 6px; }
+  .hero-trust .icon { width: 18px; height: 18px; color: var(--amber); }
+  .to-form { display: inline-block; margin-top: 14px; font-size: .95rem; color: var(--on-wall); font-weight: 700; }
+  .to-form:hover { color: var(--amber); }
+
+  /* The window: a white vinyl double-hung frame you look through */
+  .window { position: relative; justify-self: center; width: min(100%, 470px); }
+  .frame {
+    position: relative; padding: 16px; border-radius: 12px;
+    background: linear-gradient(160deg, #fdfcf9 0%, var(--vinyl) 45%, var(--vinyl-2) 100%);
+    box-shadow: 0 40px 70px -30px rgba(4, 12, 24, .8), 0 12px 24px -8px rgba(4, 12, 24, .45);
+  }
+  .glass {
+    position: relative; aspect-ratio: 4 / 5; border-radius: 4px; overflow: hidden;
+    touch-action: pan-y; cursor: grab; user-select: none; -webkit-user-select: none;
+    /* static fallback: dusk behind fogged glass, before JS runs */
+    background:
+      linear-gradient(rgba(214, 226, 235, .74), rgba(222, 232, 240, .82)),
+      linear-gradient(#22405f 0%, #46607d 38%, #e9a46a 58%, #2a4764 60%, #1e3753 100%);
+  }
+  .glass.live { background: #22405f; }
+  .glass canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+  #glass-fog { opacity: .74; }
+  #glass-fog, #glass-blur { filter: blur(3px); transform: scale(1.03); }
+  .glass::after { /* the frame's inner shadow falling onto the glass */
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    box-shadow: inset 0 6px 12px -4px rgba(20, 40, 60, .45), inset 0 -2px 8px rgba(20, 40, 60, .2);
+  }
+  .rail { /* meeting rail between the two sashes */
+    position: absolute; left: 6px; right: 6px; top: 50%; height: 22px; transform: translateY(-50%);
+    border-radius: 3px; pointer-events: none;
+    background: linear-gradient(#fdfcf9, var(--vinyl) 50%, var(--vinyl-2));
+    box-shadow: 0 6px 10px -3px rgba(20, 40, 60, .4);
+  }
+  .rail::after { /* sash lock */
+    content: ""; position: absolute; left: 50%; top: 4px; width: 46px; height: 14px; margin-left: -23px;
+    border-radius: 7px; background: linear-gradient(#c9c2b5, #a9a194);
+    box-shadow: 0 2px 4px rgba(20, 40, 60, .35);
+  }
+  .sill {
+    height: 18px; margin: 0 -14px; border-radius: 4px;
+    background: linear-gradient(#fdfcf9, var(--vinyl-2));
+    box-shadow: 0 16px 24px -10px rgba(4, 12, 24, .7);
+  }
+  .hint {
+    position: absolute; left: 50%; bottom: 14%; transform: translateX(-50%);
+    display: inline-flex; align-items: center; gap: 8px; padding: 9px 15px; border-radius: 999px;
+    background: rgba(21, 40, 60, .78); color: var(--on-wall); font-size: .88rem; font-weight: 700;
+    pointer-events: none; white-space: nowrap; transition: opacity .6s ease;
+  }
+  .hint .icon { width: 18px; height: 18px; }
+  .hint.gone { opacity: 0; }
+
+  /* ---------- Seams: animated water lines between sections ---------- */
+  .seam { position: relative; z-index: 2; display: block; width: 100%; height: 70px; margin-top: -69px; pointer-events: none; }
+  .seam .fill { fill: var(--next); }
+  .seam .l1 { stroke: rgba(223, 232, 238, .55); }
+  .seam .l2 { stroke: var(--amber); }
+  .seam .l3 { stroke: rgba(223, 232, 238, .3); }
+  .seam path:not(.fill) { fill: none; stroke-width: 2; vector-effect: non-scaling-stroke; }
+  .seam circle { fill: rgba(240, 246, 250, .9); }
+  .seam.to-wall .l1 { stroke: rgba(70, 96, 125, .45); }
+  .seam.to-wall .l3 { stroke: rgba(70, 96, 125, .28); }
+  .seam.to-wall circle { fill: #9fb4c6; }
+
+  /* ---------- Sections ---------- */
+  .sec { position: relative; padding: clamp(56px, 8vw, 104px) 0 clamp(80px, 10vw, 130px); }
+  .on-vinyl { background: var(--vinyl); color: var(--ink); }
+  .on-wall { background: var(--wall); color: var(--on-wall); }
+  .sec h2 { font-size: clamp(2rem, 4.6vw, 3.4rem); }
+  .lede { margin-top: 16px; font-size: 1.1rem; max-width: 52ch; }
+  .on-vinyl .lede { color: var(--ink-soft); }
+  .on-wall .lede { color: var(--on-wall-soft); }
+
+  /* Window types: whole row is the link, one arrow cue each */
+  .types-grid { display: grid; gap: clamp(28px, 4vw, 56px); }
+  @media (min-width: 900px) { .types-grid { grid-template-columns: .9fr 1.1fr; align-items: start; } }
+  .flyer { margin-top: 18px; font-weight: 900; text-transform: uppercase; letter-spacing: .02em; font-size: .95rem; color: var(--amber-deep); max-width: 40ch; }
+  .types { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .type {
+    display: grid; grid-template-columns: 56px 1fr 44px; gap: 16px; align-items: center;
+    padding: 16px 16px 16px 14px; border-radius: var(--radius); text-decoration: none; color: var(--ink);
+    background: #fbfaf7; box-shadow: 0 10px 24px -16px rgba(8, 20, 36, .45), 0 2px 4px rgba(8, 20, 36, .06);
+    transition: transform .25s cubic-bezier(.2,.8,.2,1), box-shadow .25s;
+  }
+  .type:hover { transform: translateY(-2px); box-shadow: 0 16px 30px -16px rgba(8, 20, 36, .5), 0 2px 4px rgba(8, 20, 36, .06); }
+  .type b { display: block; font-weight: 900; text-transform: uppercase; font-size: 1.12rem; letter-spacing: .01em; }
+  .type small { display: block; margin-top: 3px; color: var(--ink-soft); font-size: .95rem; line-height: 1.4; }
+  .wicon { width: 56px; height: 56px; fill: #dfe8ee; stroke: var(--wall-soft); stroke-width: 2; stroke-linejoin: round; }
+  .go { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: var(--amber); color: var(--ink); transition: transform .25s cubic-bezier(.2,.8,.2,1); }
+  .go .icon { width: 18px; height: 18px; }
+  .type:hover .go { transform: translateX(3px); }
+  .why-h { margin-top: clamp(64px, 9vw, 112px); }
+
+  /* Why vinyl: a four-lite window of reasons */
+  .lites {
+    margin-top: clamp(32px, 5vw, 52px); display: grid; gap: 14px; padding: 14px; border-radius: 12px;
+    background: linear-gradient(160deg, #fdfcf9, var(--vinyl-2));
+    box-shadow: var(--shadow-lift);
+  }
+  @media (min-width: 760px) { .lites { grid-template-columns: 1fr 1fr; } }
+  .lite {
+    position: relative; padding: clamp(22px, 3vw, 34px); border-radius: 4px; overflow: hidden;
+    background: linear-gradient(170deg, #e6eef3 0%, #d6e2ea 100%);
+    box-shadow: inset 0 5px 10px -4px rgba(20, 40, 60, .32);
+  }
+  .lite .icon { width: 34px; height: 34px; color: var(--wall-soft); stroke-width: 1.8; }
+  .lite h3 { margin-top: 16px; font-size: 1.35rem; font-weight: 900; text-transform: uppercase; letter-spacing: .005em; }
+  .lite p { margin-top: 8px; color: var(--ink-soft); max-width: 40ch; }
+
+  /* Estimate form */
+  .est { display: grid; gap: clamp(32px, 5vw, 64px); align-items: start; }
+  @media (min-width: 960px) { .est { grid-template-columns: .85fr 1.15fr; } }
+  .steps { list-style: none; margin: 30px 0 0; padding: 0; display: grid; gap: 18px; }
+  .steps li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: start; }
+  .steps .dot {
+    width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center;
+    background: var(--wall-soft); color: var(--amber);
+  }
+  .steps b { display: block; font-size: 1.05rem; }
+  .steps p { color: var(--on-wall-soft); font-size: .98rem; }
+  .direct { margin-top: 30px; font-size: .98rem; color: var(--on-wall-soft); }
+  .direct a { color: var(--on-wall); font-weight: 800; }
+
+  .sash {
+    padding: 14px; border-radius: 12px;
+    background: linear-gradient(160deg, #fdfcf9, var(--vinyl) 45%, var(--vinyl-2));
+    box-shadow: 0 40px 70px -30px rgba(4, 12, 24, .8), 0 12px 24px -8px rgba(4, 12, 24, .45);
+  }
+  form.quote {
+    padding: clamp(20px, 3.4vw, 34px); border-radius: 4px; color: var(--ink);
+    background: linear-gradient(170deg, #eef3f6, #e1e9ef);
+    box-shadow: inset 0 5px 10px -4px rgba(20, 40, 60, .3);
+  }
+  .quote h3 { font-size: 1.5rem; font-weight: 900; text-transform: uppercase; }
+  .quote .sub { margin-top: 6px; color: var(--ink-soft); font-size: .96rem; }
+  .fields { display: grid; gap: 16px; margin-top: 22px; }
+  @media (min-width: 560px) { .fields { grid-template-columns: 1fr 1fr; } .f-wide { grid-column: 1 / -1; } }
+  .f label { display: block; font-weight: 800; font-size: .92rem; margin-bottom: 6px; }
+  .f label small { font-weight: 600; color: var(--ink-soft); }
+  .f input, .f textarea {
+    width: 100%; font: 500 1.02rem/1.4 var(--font); color: var(--ink);
+    padding: 13px 14px; border-radius: 10px; border: 2px solid #c3cfd9; background: #fbfcfd;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .f textarea { min-height: 96px; resize: vertical; }
+  .f input::placeholder, .f textarea::placeholder { color: #5f7183; }
+  .f input:focus, .f textarea:focus { outline: none; border-color: var(--amber-deep); box-shadow: 0 0 0 4px rgba(242, 166, 90, .3); }
+  .f.bad input { border-color: var(--error); }
+  .err { display: block; min-height: 0; margin-top: 6px; font-size: .88rem; font-weight: 700; color: var(--error); }
+  .err:empty { display: none; }
+  .chips { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .chips legend { font-weight: 800; font-size: .92rem; margin-bottom: 6px; padding: 0; width: 100%; }
+  .chips label { margin: 0; position: relative; }
+  .chips input { position: absolute; left: 0; top: 0; width: 1px; height: 1px; padding: 0; opacity: 0; pointer-events: none; }
+  .chips span {
+    display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 999px; cursor: pointer;
+    border: 2px solid #c3cfd9; background: #fbfcfd; font-weight: 700; font-size: .95rem; transition: background-color .15s, border-color .15s;
+  }
+  .chips span:hover { border-color: var(--amber-deep); }
+  .chips input:checked + span { background: var(--amber); border-color: var(--amber); color: var(--ink); }
+  .chips input:focus-visible + span { outline: 3px solid var(--amber-deep); outline-offset: 2px; }
+  .stepper { display: grid; grid-template-columns: 52px 1fr 52px; gap: 8px; }
+  .stepper input { text-align: center; font-weight: 800; font-variant-numeric: tabular-nums; -moz-appearance: textfield; }
+  .stepper input::-webkit-inner-spin-button, .stepper input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+  .stepper button {
+    min-height: 52px; border-radius: 10px; border: 2px solid #c3cfd9; background: #fbfcfd; color: var(--ink);
+    display: grid; place-items: center; cursor: pointer;
+  }
+  .stepper button:hover { border-color: var(--amber-deep); }
+  .stepper button:active { transform: scale(.95); }
+  .quote .btn { width: 100%; margin-top: 22px; }
+  .fine { margin-top: 12px; font-size: .86rem; color: var(--ink-soft); text-align: center; }
+
+  .sent { display: none; }
+  .quote.done .fields, .quote.done > .btn, .quote.done > .fine, .quote.done > .sub { display: none; }
+  .quote.done .sent { display: block; }
+  .sent p { margin-top: 10px; color: var(--ink-soft); }
+  .sent pre {
+    margin: 16px 0 0; padding: 14px 16px; border-radius: 10px; background: #fbfcfd; border: 2px solid #c3cfd9;
+    font: 500 .95rem/1.5 var(--font); white-space: pre-wrap; word-break: break-word; color: var(--ink);
+  }
+  .sent .btn-pair { margin-top: 16px; }
+  .sent .btn-line { color: var(--ink); border-color: var(--amber-deep); }
+  .sent .again { margin-top: 14px; background: none; border: 0; padding: 8px 0; font: 700 .92rem var(--font); color: var(--ink-soft); text-decoration: underline; cursor: pointer; }
+
+  /* Credentials strip */
+  .creds { background: var(--amber); color: var(--ink); padding: 26px 0; }
+  .creds ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 16px 20px; }
+  @media (min-width: 860px) { .creds ul { grid-template-columns: repeat(4, auto); justify-content: space-between; } }
+  .creds li { display: flex; align-items: center; gap: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: .03em; font-size: .98rem; line-height: 1.15; }
+  .creds .icon { width: 28px; height: 28px; }
+  .creds small { display: block; font-size: .78rem; font-weight: 700; letter-spacing: .01em; text-transform: none; margin-top: 2px; }
+  .creds .bz { margin-top: 18px; font-size: .92rem; font-weight: 600; }
+  .creds .bz a { font-weight: 800; }
+
+  /* Service area */
+  .area-grid { display: grid; gap: clamp(28px, 5vw, 64px); }
+  @media (min-width: 900px) { .area-grid { grid-template-columns: .9fr 1.1fr; align-items: start; } }
+  .base { margin-top: 26px; display: flex; gap: 12px; align-items: flex-start; }
+  .base .icon { color: var(--amber-deep); margin-top: 2px; }
+  .base b { display: block; }
+  .base a { font-weight: 700; font-size: .95rem; color: var(--ink-soft); }
+  .towns { margin: 0; padding: 0; list-style: none; columns: 2; column-gap: 24px; font-size: 1rem; }
+  @media (min-width: 560px) { .towns { columns: 3; } }
+  .towns li { padding: 6px 0; break-inside: avoid; border-bottom: 1px solid var(--vinyl-shade); }
+  .towns li.home { font-weight: 900; color: var(--ink); }
+  .towns li.home span { display: block; font-size: .8rem; font-weight: 700; color: var(--amber-deep); text-transform: uppercase; letter-spacing: .04em; }
+  .towns-note { margin-top: 14px; font-size: .9rem; color: var(--ink-soft); }
+
+  /* Close + footer */
+  .close { text-align: left; padding-bottom: 40px; }
+  .close h2 { font-size: clamp(2rem, 5.6vw, 4.2rem); max-width: 16ch; }
+  .close .lede { max-width: 46ch; }
+  .close .btn-pair { margin-top: 30px; max-width: 560px; }
+  footer { margin-top: clamp(56px, 8vw, 96px); padding-top: 26px; border-top: 1px solid rgba(185, 201, 215, .22); display: grid; gap: 8px 32px; font-size: .95rem; color: var(--on-wall-soft); }
+  @media (min-width: 760px) { footer { grid-template-columns: 1.4fr 1fr 1fr; } }
+  footer b { color: var(--on-wall); }
+  footer a { text-decoration: none; }
+  footer a:hover { color: var(--amber); }
+  .demo { margin-top: 28px; font-size: .85rem; color: var(--on-wall-soft); padding-bottom: 96px; }
+  @media (min-width: 760px) { .demo { padding-bottom: 8px; } }
+
+  /* ---------- Sticky bar (phones) ---------- */
+  .sticky {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; display: flex; gap: 10px;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(19, 37, 57, .94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 -10px 24px -12px rgba(4, 12, 24, .6);
+    transition: transform .35s cubic-bezier(.2,.8,.2,1);
+  }
+  .sticky .btn-amber { flex: 1; min-height: 52px; }
+  .sticky .call { flex: none; width: 52px; min-height: 52px; padding: 0; color: var(--on-wall); }
+  .sticky.is-hidden { transform: translateY(115%); }
+  @media (min-width: 760px) { .sticky { display: none; } }
+</style>
+</head>
+<body>
+<!--
+THESIS: A replacement-window installer's page you look through, not at: the hero is his product, a white vinyl double-hung window, fogged with condensation you wipe clear. Refuses the contractor template of a stock house photo, a blue banner and a grid of service cards.
+OWN-WORLD: Dusk navy wall, white vinyl frames with soft bevel shading, fogged blue-white glass, dusk amber light from the bay for every action. Heavy uppercase system sans. Water lines bead between sections.
+STORY: Old windows fog, draft and need paint; his fix them. He is licensed, insured, bonded and covers every Ocean County town. One form turns into one text to Joseph.
+FIRST VIEWPORT: Left: benefit headline, one-line pitch, Text / Call pair, trust line. Right (below on phones): the fogged window at dusk, already wiped once by a ghost finger, inviting a swipe.
+FORM: Fogged window, first of six worlds (runner-up: drafts and curtains). Seed: unattended pitch-site build, no concept-seed roll.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3.5h3.2l1.6 4.2-2.1 1.4a11 11 0 0 0 5.2 5.2l1.4-2.1 4.2 1.6V17a2.5 2.5 0 0 1-2.7 2.5C9.4 19 5 14.6 4.5 6.2A2.5 2.5 0 0 1 5 3.5Z"/></symbol>
+    <symbol id="i-text" viewBox="0 0 24 24"><path d="M4 5.5h16v10H10l-4.5 3.5v-3.5H4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7.5 3v5.5c0 4.6-3.2 8.2-7.5 9.5-4.3-1.3-7.5-4.9-7.5-9.5V6z"/><path d="M8.6 12.2l2.4 2.4 4.4-4.6"/></symbol>
+    <symbol id="i-umbrella" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 18 0z"/><path d="M12 12v6.5a2 2 0 0 1-4 0"/><path d="M12 3v0"/></symbol>
+    <symbol id="i-seal" viewBox="0 0 24 24"><circle cx="12" cy="10" r="6"/><path d="M8.5 15l-1.5 6 5-2.5 5 2.5-1.5-6"/><path d="M9.8 10l1.5 1.5 3-3"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2.5L5 13.5h6.2L10.5 21.5 19 10.5h-6.4z"/></symbol>
+    <symbol id="i-brush" viewBox="0 0 24 24"><path d="M14.5 3.5l6 6-7.5 7.5-6-6z"/><path d="M7 11l-3.2 3.2a2.4 2.4 0 0 0 0 3.4l2.6 2.6a2.4 2.4 0 0 0 3.4 0L13 17"/><path d="M3 21l3-3"/></symbol>
+    <symbol id="i-wind" viewBox="0 0 24 24"><path d="M3 8.5h11a3 3 0 1 0-3-3"/><path d="M3 12.5h15a3 3 0 1 1-3 3"/><path d="M3 16.5h7"/></symbol>
+    <symbol id="i-drops" viewBox="0 0 24 24"><path d="M8 3.5S4 8.3 4 11a4 4 0 0 0 8 0c0-2.7-4-7.5-4-7.5z"/><path d="M17 10.5s-3 3.6-3 5.6a3 3 0 0 0 6 0c0-2-3-5.6-3-5.6z"/></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><path d="M9 11V5.5a1.5 1.5 0 0 1 3 0V10m0-1.5a1.5 1.5 0 0 1 3 0V11m0-1a1.5 1.5 0 0 1 3 0v4.5a6.5 6.5 0 0 1-6.5 6.5h-.6a6 6 0 0 1-4.6-2.2L4.6 15.6a1.5 1.5 0 0 1 2.3-1.9L9 16"/></symbol>
+    <symbol id="w-double" viewBox="0 0 48 48"><rect x="10" y="4" width="28" height="40" rx="2"/><path d="M10 24h28M14 8h20v13H14zM14 27h20v13H14z" stroke-width="1.6"/></symbol>
+    <symbol id="w-picture" viewBox="0 0 48 48"><rect x="3" y="9" width="42" height="30" rx="2"/><rect x="8" y="14" width="32" height="20" stroke-width="1.6"/><path d="M8 29l8-6 6 4 8-7 10 9" stroke-width="1.6"/></symbol>
+    <symbol id="w-bay" viewBox="0 0 48 48"><path d="M3 12l9-4h24l9 4v26l-9 3H12l-9-3z"/><path d="M12 8v33M36 8v33" stroke-width="1.6"/><path d="M3 38l9 3h24l9-3" stroke-width="1.6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M6 12h12"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M6 12h12M12 6v12"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H8"/></symbol>
+    <symbol id="i-window" viewBox="0 0 38 42"><rect x="1" y="1" width="36" height="40" rx="4" fill="#f5f2ec" stroke="none"/><rect x="5" y="5" width="28" height="15" rx="1.5" fill="#f2a65a" stroke="none"/><rect x="5" y="23" width="28" height="14" rx="1.5" fill="#46607d" stroke="none"/><rect x="5" y="23" width="28" height="5" fill="#dfe8ee" opacity=".7" stroke="none"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Advanced Building and Remodeling Associates, home">
+      <svg aria-hidden="true"><use href="#i-window"/></svg>
+      <div><b>Advanced</b><span>Building and Remodeling Associates</span></div>
+    </a>
+    <a class="top-call" href="tel:+16093849030"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>(609) 384-9030</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="wrap">
+      <div>
+        <h1 id="hero-h" class="display">New windows.<br><em>Installed sooner.</em></h1>
+        <p class="pitch">In-stock vinyl and Energy Star replacement windows, professionally installed across Ocean County.</p>
+        <div class="btn-pair" id="hero-actions">
+          <a class="btn btn-amber" href="sms:+16093849030?&amp;body=Hi%20Joseph!%20I%27d%20like%20an%20estimate%20on%20new%20windows.%0AAddress%3A%20%0ANumber%20of%20windows%3A%20">
+            <svg class="icon" aria-hidden="true"><use href="#i-text"/></svg>Text for an estimate</a>
+          <a class="btn btn-line" href="tel:+16093849030">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Call (609) 384-9030</a>
+        </div>
+        <a class="to-form" href="#estimate">Or fill out the estimate form</a>
+        <div class="hero-trust">
+          <span><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>Licensed, insured and bonded</span>
+          <span><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>We make house calls</span>
+        </div>
+      </div>
+
+      <div class="window">
+        <div class="frame">
+          <div class="glass" id="glass" role="img" aria-label="A fogged double-hung window at dusk over the bay. Wipe it with your finger or mouse to clear the glass.">
+            <canvas id="glass-cv" aria-hidden="true"></canvas><canvas id="glass-blur" aria-hidden="true"></canvas><canvas id="glass-fog" aria-hidden="true"></canvas><canvas id="glass-drops" aria-hidden="true"></canvas>
+            <div class="rail"></div>
+            <div class="hint" id="hint"><svg class="icon" aria-hidden="true"><use href="#i-hand"/></svg>Wipe the glass</div>
+          </div>
+        </div>
+        <div class="sill"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="on-vinyl sec" id="windows" aria-labelledby="types-h">
+    <svg class="seam" style="--next: var(--vinyl)" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
+      <path class="fill"/><path class="l3"/><path class="l1"/><path class="l2"/><circle r="4"/><circle r="3"/><circle r="5"/>
+    </svg>
+    <div class="wrap">
+      <div class="types-grid">
+        <div>
+          <h2 id="types-h" class="display">Double, picture and bay windows</h2>
+          <p class="lede">Vinyl replacement windows in many styles and colors, Energy Star rated and professionally installed. Pick one to start your estimate.</p>
+          <p class="flyer">Lifetime performance. Affordable windows, in stock and installed sooner.</p>
+        </div>
+        <ul class="types">
+          <li><a class="type" href="#estimate" data-type="Double windows">
+            <svg class="wicon" aria-hidden="true"><use href="#w-double"/></svg>
+            <span><b>Double windows</b><small>Two sashes that slide up and down. The everyday window in most Shore homes.</small></span>
+            <span class="go" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="type" href="#estimate" data-type="Picture windows">
+            <svg class="wicon" aria-hidden="true"><use href="#w-picture"/></svg>
+            <span><b>Picture windows</b><small>One big fixed pane, all view and nothing in the way.</small></span>
+            <span class="go" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="type" href="#estimate" data-type="Bay windows">
+            <svg class="wicon" aria-hidden="true"><use href="#w-bay"/></svg>
+            <span><b>Bay windows</b><small>Angled windows that push out from the wall for more light and a deep sill.</small></span>
+            <span class="go" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></span></a></li>
+        </ul>
+      </div>
+      <h2 id="why-h" class="display why-h">Why vinyl.<br>Why Energy Star.</h2>
+      <p class="lede">If your windows fog up, rattle in a nor'easter or need scraping every spring, they're costing you more than they look.</p>
+      <div class="lites">
+        <div class="lite">
+          <svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg>
+          <h3>Lower energy bills</h3>
+          <p>Energy Star windows are built to hold heat in through the winter and keep it out in the summer, so your heat and A/C run less.</p>
+        </div>
+        <div class="lite">
+          <svg class="icon" aria-hidden="true"><use href="#i-brush"/></svg>
+          <h3>Nothing to paint</h3>
+          <p>Vinyl frames don't peel, rot or need scraping. Wipe them down and you're done.</p>
+        </div>
+        <div class="lite">
+          <svg class="icon" aria-hidden="true"><use href="#i-wind"/></svg>
+          <h3>No more drafts</h3>
+          <p>Tight-fitting sashes end the cold spot by the window, so the seat next to it is a good one again.</p>
+        </div>
+        <div class="lite">
+          <svg class="icon" aria-hidden="true"><use href="#i-drops"/></svg>
+          <h3>No more fogged glass</h3>
+          <p>Fog trapped between the panes means the seal has failed. New insulated glass gives you the view back.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="on-wall sec" id="estimate" aria-labelledby="est-h">
+    <svg class="seam to-wall" style="--next: var(--wall)" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
+      <path class="fill"/><path class="l3"/><path class="l1"/><path class="l2"/><circle r="4"/><circle r="3"/><circle r="5"/>
+    </svg>
+    <div class="wrap est">
+      <div>
+        <h2 class="display" id="est-h">Request an estimate</h2>
+        <p class="lede">Skip the phone tag. Fill this in and it becomes one text to Joseph with everything he needs.</p>
+        <ol class="steps">
+          <li><span class="dot"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg></span><div><b>Send your details</b><p>Your phone opens a text that's already written. Just hit send.</p></div></li>
+          <li><span class="dot"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span><div><b>Joseph comes to you</b><p>We make house calls. He'll reach out to set a time to see your windows.</p></div></li>
+          <li><span class="dot"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span><div><b>Windows in stock</b><p>Pricing comes with the estimate, and in-stock windows get installed sooner.</p></div></li>
+        </ol>
+        <p class="direct">Rather talk? Call <a href="tel:+16093849030">(609) 384-9030</a>.</p>
+      </div>
+
+      <div class="sash">
+        <form class="quote" id="quote" novalidate>
+          <h3>Your windows</h3>
+          <p class="sub">Takes about a minute.</p>
+          <div class="fields">
+            <div class="f">
+              <label for="q-name">Name</label>
+              <input id="q-name" name="name" autocomplete="name" required aria-describedby="e-name">
+              <span class="err" id="e-name" aria-live="polite"></span>
+            </div>
+            <div class="f">
+              <label for="q-phone">Phone</label>
+              <input id="q-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required aria-describedby="e-phone">
+              <span class="err" id="e-phone" aria-live="polite"></span>
+            </div>
+            <div class="f f-wide">
+              <label for="q-addr">Address <small>(street and town)</small></label>
+              <input id="q-addr" name="address" autocomplete="street-address" required aria-describedby="e-addr" placeholder="e.g. 12 Bay Ave, Barnegat">
+              <span class="err" id="e-addr" aria-live="polite"></span>
+            </div>
+            <fieldset class="f f-wide chips">
+              <legend>Window type</legend>
+              <label><input type="radio" name="type" value="Double windows"><span>Double</span></label>
+              <label><input type="radio" name="type" value="Picture windows"><span>Picture</span></label>
+              <label><input type="radio" name="type" value="Bay windows"><span>Bay</span></label>
+              <label><input type="radio" name="type" value="A mix / not sure" checked><span>Mix / not sure</span></label>
+            </fieldset>
+            <div class="f f-wide">
+              <label for="q-count">Number of windows <small>(a guess is fine)</small></label>
+              <div class="stepper">
+                <button type="button" data-step="-1" aria-label="One fewer window"><svg class="icon" aria-hidden="true"><use href="#i-minus"/></svg></button>
+                <input id="q-count" name="windows" type="number" inputmode="numeric" min="1" max="99" value="1">
+                <button type="button" data-step="1" aria-label="One more window"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+              </div>
+            </div>
+            <div class="f f-wide">
+              <label for="q-msg">Anything else? <small>(optional)</small></label>
+              <textarea id="q-msg" name="message" placeholder="Which rooms, problems you've noticed, best time to reach you"></textarea>
+            </div>
+          </div>
+          <button class="btn btn-amber" type="submit"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg>Send my estimate request</button>
+          <p class="fine">Opens a text to (609) 384-9030. Nothing is stored on this site.</p>
+
+          <div class="sent" id="sent" aria-live="polite">
+            <h3>Your text is ready</h3>
+            <p>If your messages app didn't open, send this to <b>(609) 384-9030</b> from your phone, or copy it.</p>
+            <pre id="sent-body"></pre>
+            <div class="btn-pair">
+              <a class="btn btn-amber" id="sent-sms" href="sms:+16093849030"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg>Open text</a>
+              <button class="btn btn-line" type="button" id="sent-copy"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy message</span></button>
+            </div>
+            <button type="button" class="again" id="sent-edit">Edit my details</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="creds" aria-label="Credentials">
+    <div class="wrap">
+      <ul>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg><span>Licensed<small>NJ HIC #13VH10689900</small></span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-umbrella"/></svg>Insured</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-seal"/></svg>Bonded</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>All of Ocean County</li>
+      </ul>
+      <p class="bz">License verified active by BuildZoom, September 2026. BuildZoom score 94, top 24% of NJ contractors. <a href="https://www.buildzoom.com/contractor/advanced-building-and-remodeling-associates" target="_blank" rel="noopener">See the profile</a></p>
+    </div>
+  </section>
+
+  <section class="on-vinyl sec" aria-labelledby="area-h">
+    <div class="wrap area-grid">
+      <div>
+        <h2 id="area-h" class="display">Every town in Ocean County</h2>
+        <p class="lede">From Tuckerton to Point Pleasant and out to the island, if it's in Ocean County, Joseph will come out for the estimate.</p>
+        <div class="base">
+          <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+          <div><b>519 Shark Ln, Manahawkin, NJ</b>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=519%20Shark%20Ln%2C%20Manahawkin%2C%20NJ" target="_blank" rel="noopener">Open in Maps</a></div>
+        </div>
+      </div>
+      <div>
+        <ul class="towns">
+          <li class="home">Stafford <span>Manahawkin, home base</span></li>
+          <li>Barnegat</li><li>Barnegat Light</li><li>Bay Head</li><li>Beach Haven</li><li>Beachwood</li>
+          <li>Berkeley</li><li>Brick</li><li>Eagleswood</li><li>Harvey Cedars</li><li>Island Heights</li>
+          <li>Jackson</li><li>Lacey</li><li>Lakehurst</li><li>Lakewood</li><li>Lavallette</li>
+          <li>Little Egg Harbor</li><li>Long Beach Township</li><li>Manchester</li><li>Mantoloking</li><li>Ocean Gate</li>
+          <li>Ocean Township</li><li>Pine Beach</li><li>Plumsted</li><li>Point Pleasant</li><li>Point Pleasant Beach</li>
+          <li>Seaside Heights</li><li>Seaside Park</li><li>Ship Bottom</li><li>South Toms River</li><li>Surf City</li>
+          <li>Toms River</li><li>Tuckerton</li>
+        </ul>
+        <p class="towns-note">Don't see your town's name? If you're in Ocean County, you're covered.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="on-wall sec close" aria-labelledby="close-h">
+    <svg class="seam to-wall" style="--next: var(--wall)" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
+      <path class="fill"/><path class="l3"/><path class="l1"/><path class="l2"/><circle r="4"/><circle r="3"/><circle r="5"/>
+    </svg>
+    <div class="wrap">
+      <h2 id="close-h" class="display">Advanced Building and Remodeling Associates</h2>
+      <p class="lede">Vinyl replacement windows and Energy Star windows, from Manahawkin to every corner of Ocean County. Affordable windows, in stock and installed sooner. Call or text for pricing.</p>
+      <div class="btn-pair" id="close-actions">
+        <a class="btn btn-amber" href="#estimate"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>Request an estimate</a>
+        <a class="btn btn-line" href="tel:+16093849030"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Call (609) 384-9030</a>
+      </div>
+      <footer>
+        <div><b>Advanced Building and Remodeling Associates</b><br>Vinyl replacement windows · Energy Star windows</div>
+        <div><a href="tel:+16093849030">(609) 384-9030</a><br><a href="sms:+16093849030">Text us</a></div>
+        <div>519 Shark Ln<br>Manahawkin, NJ<br>NJ HIC #13VH10689900</div>
+      </footer>
+      <p class="demo">Demo one-pager — free sample.</p>
+    </div>
+  </section>
+</main>
+
+<nav class="sticky is-hidden" id="sticky" aria-label="Quick contact">
+  <a class="btn btn-amber" href="#estimate"><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg>Request an estimate</a>
+  <a class="btn btn-line call" href="tel:+16093849030" aria-label="Call (609) 384-9030"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></a>
+</nav>
+
+<script>
+/* ===== Shared: one animation loop, reduced motion, global pointer ===== */
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const PHONE = matchMedia('(max-width: 759px)').matches;
+const Loop = (() => {
+  const tasks = new Set(); let raf = 0, last = 0;
+  function frame(now) {
+    const dt = Math.min(0.05, (now - last) / 1000 || 0.016); last = now;
+    let any = false;
+    tasks.forEach(k => { if (k.active) { k.step(dt, now / 1000); any = true; } });
+    raf = any ? requestAnimationFrame(frame) : 0;
+  }
+  return {
+    add(task) { tasks.add(task); },
+    kick() { if (!raf && !REDUCED) { last = performance.now(); raf = requestAnimationFrame(frame); } }
+  };
+})();
+function watchVisible(el, task) {
+  task.active = false;
+  new IntersectionObserver(es => { task.active = es[0].isIntersecting; if (task.active) Loop.kick(); }, { rootMargin: '80px' }).observe(el);
+}
+const Pointer = { x: -9999, y: -9999, vx: 0, vy: 0, t: 0 };
+(() => {
+  function at(x, y) {
+    const now = performance.now(), dt = Math.max(8, now - Pointer.t);
+    if (now - Pointer.t < 120) { Pointer.vx = (x - Pointer.x) / dt * 1000; Pointer.vy = (y - Pointer.y) / dt * 1000; }
+    else { Pointer.vx = Pointer.vy = 0; }
+    Pointer.x = x; Pointer.y = y; Pointer.t = now;
+  }
+  addEventListener('pointermove', e => { if (e.pointerType !== 'touch') at(e.clientX, e.clientY); }, { passive: true });
+  addEventListener('touchstart', e => { const t = e.touches[0]; Pointer.t = 0; at(t.clientX, t.clientY); }, { passive: true });
+  addEventListener('touchmove', e => { const t = e.touches[0]; at(t.clientX, t.clientY); }, { passive: true });
+})();
+
+/* ===== Fogged window: dusk scene, condensation you wipe, beads that run ===== */
+(() => {
+  const C = {
+    FOG_SCALE: 0.34,       // fog mask resolution relative to the glass
+    FOG_OPACITY: 0.74,     // veil strength where fully fogged
+    REFOG: 0.16,           // how fast wiped glass fogs back over (per second)
+    WIPE_R: 30,            // finger / cursor wipe radius, px
+    DROPS: PHONE ? 42 : 80,
+    PUSH_R: 52,            // beads inside this radius get shoved
+    BREAK: 13,             // shoved this far, a bead breaks free and runs
+    SPRING: 38, DAMP: 6.5,
+    GROW: 0.07,            // bead growth, px per second (scaled by random)
+    RUN_AT: 5.4,           // radius at which a bead gets heavy and runs
+    RUN_MAX: 150,          // runner top speed, px/s
+    GHOST_EVERY: 9,        // seconds of no touch before the ghost finger wipes again
+    STREAKS: PHONE ? 26 : 44
+  };
+  const glass = document.getElementById('glass'), cv = document.getElementById('glass-cv');
+  const hint = document.getElementById('hint');
+  const ctx = cv.getContext('2d');
+  const fog = document.getElementById('glass-fog'), fx = fog.getContext('2d', { willReadFrequently: true });
+  const dcv = document.getElementById('glass-drops'), dx = dcv.getContext('2d');
+  const tex = document.createElement('canvas'), tx = tex.getContext('2d');
+  const blur = document.getElementById('glass-blur'), bx = blur.getContext('2d');
+  const bg = document.createElement('canvas'), gx = bg.getContext('2d');
+  let W = 0, H = 0, dpr = 1, fw = 0, fh = 0, fogData = null, frameN = 0;
+  let drops = [], streaks = [], sprites = [];
+  let touched = false, lastTouch = -99, ghost = null, clock = 0;
+  const rnd = (a, b) => a + Math.random() * (b - a);
+
+  /* Bead sprites: filled, shaded water with body (no hairline glints) */
+  function makeSprites() {
+    sprites = [];
+    for (let r = 1; r <= 9; r++) {
+      const s = Math.ceil((r * 2 + 4) * dpr), c = document.createElement('canvas'); c.width = c.height = s;
+      const g = c.getContext('2d'), m = s / 2, R = r * dpr;
+      g.fillStyle = 'rgba(10,25,40,.22)'; g.beginPath(); g.arc(m, m + R * .28, R, 0, 7); g.fill();
+      const body = g.createRadialGradient(m, m + R * .35, R * .1, m, m, R);
+      body.addColorStop(0, 'rgba(250,236,214,.85)'); body.addColorStop(.55, 'rgba(160,184,204,.55)'); body.addColorStop(1, 'rgba(48,72,98,.75)');
+      g.fillStyle = body; g.beginPath(); g.arc(m, m, R, 0, 7); g.fill();
+      const spot = g.createRadialGradient(m - R * .35, m - R * .4, 0, m - R * .35, m - R * .4, R * .45);
+      spot.addColorStop(0, 'rgba(255,255,255,.95)'); spot.addColorStop(1, 'rgba(255,255,255,0)');
+      g.fillStyle = spot; g.beginPath(); g.arc(m, m, R, 0, 7); g.fill();
+      sprites.push(c);
+    }
+  }
+
+  /* Static backdrop: dusk sky, low sun, barrier-island line, bay */
+  function makeBackdrop() {
+    bg.width = W * dpr; bg.height = H * dpr; gx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const hz = H * 0.44;
+    const sky = gx.createLinearGradient(0, 0, 0, hz);
+    sky.addColorStop(0, '#2a4868'); sky.addColorStop(.4, '#5a7290'); sky.addColorStop(.78, '#d4936a'); sky.addColorStop(1, '#f2b072');
+    gx.fillStyle = sky; gx.fillRect(0, 0, W, hz);
+    const sun = gx.createRadialGradient(W * .64, hz, 0, W * .64, hz, W * .55);
+    sun.addColorStop(0, 'rgba(255,214,150,.9)'); sun.addColorStop(.25, 'rgba(250,170,100,.35)'); sun.addColorStop(1, 'rgba(250,170,100,0)');
+    gx.fillStyle = sun; gx.fillRect(0, 0, W, hz);
+    const sea = gx.createLinearGradient(0, hz, 0, H);
+    sea.addColorStop(0, '#5a5f73'); sea.addColorStop(.12, '#2f4a66'); sea.addColorStop(1, '#172c45');
+    gx.fillStyle = sea; gx.fillRect(0, hz, W, H - hz);
+    gx.fillStyle = '#1b3149'; gx.beginPath(); gx.moveTo(0, hz + 2);
+    for (let x = 0; x <= W; x += 6) gx.lineTo(x, hz - 2 - Math.max(0, Math.sin(x * .02) * 3 + Math.sin(x * .071) * 2.2 + (x > W * .2 && x < W * .32 ? 5 : 0)));
+    gx.lineTo(W, hz + 2); gx.closePath(); gx.fill();
+    streaks = Array.from({ length: C.STREAKS }, () => {
+      const d = Math.pow(Math.random(), 1.7);
+      return { d, y: hz + 4 + d * (H - hz - 8), x: rnd(0, W), len: rnd(14, 46) * (1 - d * .5), sp: rnd(4, 12) * (Math.random() < .5 ? -1 : 1), ph: rnd(0, 6.3), f: rnd(.6, 1.8) };
+    });
+  }
+
+  /* Fog texture: mottled breath on glass, denser toward the bottom */
+  function makeFogTexture() {
+    tex.width = fw; tex.height = fh;
+    tx.fillStyle = 'rgb(214,226,235)'; tx.fillRect(0, 0, fw, fh);
+    for (let i = 0; i < fw * fh / 22; i++) {
+      const x = rnd(0, fw), y = rnd(0, fh), r = rnd(2, 9), l = Math.random() < .5;
+      const g = tx.createRadialGradient(x, y, 0, x, y, r);
+      g.addColorStop(0, l ? 'rgba(240,246,250,.35)' : 'rgba(176,196,212,.28)'); g.addColorStop(1, 'rgba(214,226,235,0)');
+      tx.fillStyle = g; tx.fillRect(x - r, y - r, r * 2, r * 2);
+    }
+    const low = tx.createLinearGradient(0, fh * .5, 0, fh);
+    low.addColorStop(0, 'rgba(236,243,247,0)'); low.addColorStop(1, 'rgba(236,243,247,.45)');
+    tx.fillStyle = low; tx.fillRect(0, 0, fw, fh);
+  }
+
+  function spawn(d, anywhere) {
+    let x, y, tries = 0;
+    do { x = rnd(8, W - 8); y = rnd(8, H - 8); tries++; } while (!anywhere && fogAt(x, y) < .75 && tries < 12);
+    d = d || {};
+    Object.assign(d, { hx: x, hy: y, ox: 0, oy: 0, vx: 0, vy: 0, r: rnd(1.2, anywhere ? 4.8 : 2.6), g: rnd(.3, 1.4), run: false, rvx: 0, rvy: 0, life: anywhere ? 1 : 0, ph: rnd(0, 6.3) });
+    return d;
+  }
+  function fogAt(x, y) {
+    if (!fogData) return 1;
+    const i = ((Math.min(fh - 1, Math.max(0, (y * C.FOG_SCALE) | 0)) * fw) + Math.min(fw - 1, Math.max(0, (x * C.FOG_SCALE) | 0))) * 4 + 3;
+    return fogData[i] / 255;
+  }
+
+  function resize() {
+    const r = glass.getBoundingClientRect();
+    if (!r.width || (Math.abs(r.width - W) < 1 && Math.abs(r.height - H) < 1)) return;
+    W = r.width; H = r.height; dpr = Math.min(2, devicePixelRatio || 1);
+    cv.width = dcv.width = Math.round(W * dpr); cv.height = dcv.height = Math.round(H * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0); dx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    fw = Math.ceil(W * C.FOG_SCALE); fh = Math.ceil(H * C.FOG_SCALE);
+    fog.width = blur.width = fw; fog.height = blur.height = fh;
+    makeFogTexture(); makeBackdrop(); makeSprites();
+    fx.globalCompositeOperation = 'source-over'; fx.globalAlpha = 1; fx.drawImage(tex, 0, 0);
+    fogData = null;
+    drops = Array.from({ length: C.DROPS }, () => spawn(null, true));
+    if (REDUCED) { wipeLine(W * .18, H * .3, W * .82, H * .26, C.WIPE_R * 1.2); draw(0); }
+  }
+
+  function wipe(x, y, r, k = 1) {
+    const s = C.FOG_SCALE, g = fx.createRadialGradient(x * s, y * s, 0, x * s, y * s, r * s);
+    g.addColorStop(0, 'rgba(0,0,0,1)'); g.addColorStop(.62, 'rgba(0,0,0,.92)'); g.addColorStop(1, 'rgba(0,0,0,0)');
+    fx.globalCompositeOperation = 'destination-out'; fx.globalAlpha = k;
+    fx.fillStyle = g; fx.beginPath(); fx.arc(x * s, y * s, r * s, 0, 7); fx.fill(); fx.globalAlpha = 1;
+  }
+  function wipeLine(x0, y0, x1, y1, r) {
+    const n = Math.max(1, Math.ceil(Math.hypot(x1 - x0, y1 - y0) / (r * .3)));
+    for (let i = 0; i <= n; i++) wipe(x0 + (x1 - x0) * i / n, y0 + (y1 - y0) * i / n, r);
+  }
+
+  /* Finger and cursor input, in glass coordinates */
+  const hand = { x: 0, y: 0, vx: 0, vy: 0, on: false, t: 0 };
+  function handAt(cx, cy, real) {
+    const r = glass.getBoundingClientRect(), x = cx - r.left, y = cy - r.top;
+    const now = performance.now(), inside = x > -10 && y > -10 && x < W + 10 && y < H + 10;
+    if (!inside) { hand.on = false; return; }
+    if (hand.on && now - hand.t < 140) {
+      const dt = Math.max(8, now - hand.t) / 1000;
+      hand.vx = (x - hand.x) / dt; hand.vy = (y - hand.y) / dt;
+      wipeLine(hand.x, hand.y, x, y, C.WIPE_R);
+    } else { hand.vx = hand.vy = 0; wipe(x, y, C.WIPE_R); }
+    hand.x = x; hand.y = y; hand.t = now; hand.on = true;
+    if (real) { lastTouch = clock; ghost = null; if (!touched) { touched = true; hint.classList.add('gone'); } }
+    Loop.kick();
+  }
+  glass.addEventListener('pointermove', e => { if (e.pointerType !== 'touch') handAt(e.clientX, e.clientY, true); }, { passive: true });
+  glass.addEventListener('pointerleave', () => { hand.on = false; });
+  glass.addEventListener('pointerdown', e => { if (e.pointerType !== 'touch') e.preventDefault(); });
+  glass.addEventListener('touchstart', e => { hand.on = false; const t = e.touches[0]; handAt(t.clientX, t.clientY, true); }, { passive: true });
+  glass.addEventListener('touchmove', e => { const t = e.touches[0]; handAt(t.clientX, t.clientY, true); }, { passive: true });
+  glass.addEventListener('touchend', () => { hand.on = false; }, { passive: true });
+
+  /* Ghost finger: wipes a lazy S across the top sash so the idea reads at a glance */
+  function ghostStep(dt) {
+    if (!ghost) {
+      if (clock - lastTouch > (touched ? C.GHOST_EVERY * 2 : C.GHOST_EVERY) || clock < 0.7 && clock > 0.5) ghost = { t: 0, y0: rnd(.3, .38) };
+      else return;
+    }
+    ghost.t += dt / 1.5;
+    const p = Math.min(1, ghost.t), e = p < .5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+    const r = glass.getBoundingClientRect();
+    const x = W * (.12 + .76 * e), y = H * (ghost.y0 + Math.sin(e * Math.PI * 2.2) * .045);
+    handAt(r.left + x, r.top + y, false);
+    if (p >= 1) { ghost = null; hand.on = false; lastTouch = clock; }
+  }
+
+  function step(dt, t) {
+    clock += dt; frameN++;
+    ghostStep(dt);
+    // fog breathes back over the glass, at a gently varying rate
+    const rate = C.REFOG * (1 + .35 * Math.sin(t * .5) + .2 * Math.sin(t * 1.3 + 1));
+    fx.globalCompositeOperation = 'source-over'; fx.globalAlpha = 1 - Math.exp(-rate * dt);
+    fx.drawImage(tex, 0, 0); fx.globalAlpha = 1;
+    if (frameN % 5 === 1) fogData = fx.getImageData(0, 0, fw, fh).data;
+    if (hand.on && performance.now() - hand.t > 160) { hand.vx *= .8; hand.vy *= .8; }
+
+    for (const d of drops) {
+      if (d.run) {
+        d.rvy = Math.min(C.RUN_MAX * (d.r / 6), d.rvy + 340 * dt);
+        d.rvx *= Math.exp(-3 * dt);
+        d.hx += (d.rvx + Math.sin(t * 7 + d.ph) * 14) * dt; d.hy += d.rvy * dt;
+        wipe(d.hx, d.hy - d.r, d.r * .95, .55);
+        for (const o of drops) if (o !== d && !o.run && Math.abs(o.hx - d.hx) < d.r + o.r && Math.abs(o.hy - d.hy) < d.r + o.r) {
+          d.r = Math.min(7, Math.hypot(d.r, o.r * .7)); spawn(o);
+        }
+        if (d.hy > H + 12 || d.hx < -12 || d.hx > W + 12) spawn(d);
+        continue;
+      }
+      d.life = Math.min(1, d.life + dt * .8);
+      d.r += C.GROW * d.g * dt * (fogAt(d.hx, d.hy) > .6 ? 1 : 0);
+      // shove from the finger, then spring back with a wobble
+      if (hand.on) {
+        const px = d.hx + d.ox - hand.x, py = d.hy + d.oy - hand.y, dist = Math.hypot(px, py);
+        if (dist < C.PUSH_R && dist > .01) {
+          const f = (1 - dist / C.PUSH_R);
+          d.vx += (px / dist * 1400 * f + hand.vx * 1.6 * f) * dt;
+          d.vy += (py / dist * 1400 * f + hand.vy * 1.6 * f) * dt;
+        }
+      }
+      d.vx += (-C.SPRING * d.ox - C.DAMP * d.vx) * dt;
+      d.vy += (-C.SPRING * d.oy - C.DAMP * d.vy) * dt;
+      d.ox += d.vx * dt; d.oy += d.vy * dt;
+      if (Math.hypot(d.ox, d.oy) > C.BREAK || d.r > C.RUN_AT) {
+        d.hx += d.ox; d.hy += d.oy; d.rvx = d.vx * .5; d.rvy = Math.max(0, d.vy * .3);
+        d.ox = d.oy = d.vx = d.vy = 0; d.run = true; d.r = Math.max(d.r, 3.2);
+        continue;
+      }
+      // a bead sitting on cleared glass slowly evaporates and reappears in the fog
+      if (fogAt(d.hx + d.ox, d.hy + d.oy) < .3) { d.life -= dt * 1.8; if (d.life < -.2) spawn(d); }
+    }
+    draw(t);
+  }
+
+  function draw(t) {
+    ctx.globalCompositeOperation = 'source-over'; ctx.globalAlpha = 1;
+    ctx.drawImage(bg, 0, 0, W, H);
+    // moving light on the bay
+    const hz = H * .44;
+    for (const s of streaks) {
+      let x = (s.x + s.sp * t) % (W + 60); if (x < -60) x += W + 60;
+      const a = (.25 + .35 * Math.sin(t * s.f * 1.6 + s.ph) + .15 * Math.sin(t * .7 + s.ph * 2)) * (1 - s.d * .7);
+      if (a <= 0) continue;
+      const len = s.len * (.65 + .35 * Math.sin(t * s.f + s.ph));
+      ctx.globalAlpha = a; ctx.fillStyle = s.d < .35 ? '#ffd29a' : '#9fb7cc';
+      ctx.fillRect(x - len / 2, s.y + Math.sin(t * 1.4 + s.ph) * 1.2, len, s.d < .35 ? 1.6 : 1.2);
+    }
+    ctx.globalAlpha = 1;
+    // fogged areas: blurred scene, then the breath veil (both low-res layers, scaled up by CSS)
+    bx.globalCompositeOperation = 'source-over'; bx.clearRect(0, 0, fw, fh);
+    bx.drawImage(cv, 0, 0, fw, fh);
+    bx.globalCompositeOperation = 'destination-in'; bx.drawImage(fog, 0, 0);
+    fog.style.opacity = (C.FOG_OPACITY * (.94 + .06 * Math.sin(t * .8))).toFixed(3);
+    // beads and runners
+    dx.clearRect(0, 0, W, H);
+    for (const d of drops) {
+      const a = d.run ? 1 : Math.max(0, Math.min(1, d.life));
+      if (a <= 0) continue;
+      const r = d.r * (d.run ? 1 : .6 + .4 * a), sp = sprites[Math.min(8, Math.max(0, Math.round(r) - 1))];
+      const w = (r * 2 + 4), h = w * (d.run ? 1.22 : 1);
+      dx.globalAlpha = a * .95;
+      dx.drawImage(sp, d.hx + d.ox - w / 2, d.hy + d.oy - h / 2, w, h);
+    }
+    dx.globalAlpha = 1;
+  }
+
+  const task = { step };
+  Loop.add(task); watchVisible(glass, task);
+  new ResizeObserver(resize).observe(glass);
+  resize();
+  glass.classList.add('live');
+  if (REDUCED) hint.classList.add('gone');
+})();
+
+/* ===== Seams: water lines between sections, beads riding the middle line ===== */
+(() => {
+  const C = { STEP: 20, SWELL: 9, RIPPLE: 3.2, SPEED: 1.5, BUMP: 16 };
+  const seams = [...document.querySelectorAll('.seam')].map((svg, i) => {
+    const [fill, l3, l1, l2] = svg.querySelectorAll('path');
+    return { svg, fill, l3, l1, l2, beads: [...svg.querySelectorAll('circle')], ph: i * 1.7, bump: 0, bx: 0 };
+  });
+  const yAt = (s, x, t, k) => {
+    const amp = C.SWELL * (.75 + .25 * Math.sin(t * .4 + s.ph));
+    let y = 35 + k * 9
+      + amp * Math.sin(x * .0042 + t * .9 * C.SPEED + s.ph)
+      + amp * .55 * Math.sin(x * .011 - t * 1.3 * C.SPEED + s.ph * 2)
+      + C.RIPPLE * Math.sin(x * .03 + t * (2.1 + k * .4) * C.SPEED + k * 2);
+    if (s.bump) y += s.bump * Math.exp(-Math.pow((x - s.bx) / 120, 2));
+    return y;
+  };
+  function line(s, t, k) {
+    let d = '';
+    for (let x = 0; x <= 1440; x += C.STEP) d += (x ? 'L' : 'M') + x + ' ' + yAt(s, x, t, k).toFixed(1);
+    return d;
+  }
+  function draw(s, t) {
+    const mid = line(s, t, 0);
+    s.l2.setAttribute('d', mid);
+    s.fill.setAttribute('d', mid + 'L1440 70L0 70Z');
+    s.l1.setAttribute('d', line(s, t, -1.6));
+    s.l3.setAttribute('d', line(s, t, -2.6));
+    s.beads.forEach((b, j) => {
+      const x = ((t * (14 + j * 7) + j * 470 + s.ph * 90) % 1520) - 40;
+      b.setAttribute('cx', x.toFixed(1)); b.setAttribute('cy', (yAt(s, x, t, 0) - 5 - j * .6).toFixed(1));
+    });
+  }
+  seams.forEach(s => {
+    const task = { step(dt, t) {
+      const r = s.svg.getBoundingClientRect();
+      if (Pointer.y > r.top - 30 && Pointer.y < r.bottom + 30 && performance.now() - Pointer.t < 100) {
+        s.bx = (Pointer.x - r.left) / r.width * 1440;
+        s.bump += (Math.min(C.BUMP, Math.abs(Pointer.vx) * .01 + 6) - s.bump) * Math.min(1, dt * 6);
+      } else s.bump *= Math.exp(-2.5 * dt);
+      draw(s, t);
+    } };
+    draw(s, 0);
+    Loop.add(task); watchVisible(s.svg, task);
+  });
+})();
+
+/* ===== Estimate form: compose one text to Joseph ===== */
+(() => {
+  const PHONE_NUM = '+16093849030';
+  const f = document.getElementById('quote');
+  const el = id => document.getElementById(id);
+  const count = el('q-count');
+  f.querySelectorAll('[data-step]').forEach(b => b.addEventListener('click', () => {
+    const v = Math.min(99, Math.max(1, (parseInt(count.value, 10) || 1) + +b.dataset.step));
+    count.value = v;
+  }));
+  function setErr(input, msg) {
+    input.closest('.f').classList.toggle('bad', !!msg);
+    input.setAttribute('aria-invalid', msg ? 'true' : 'false');
+    el(input.getAttribute('aria-describedby')).textContent = msg || '';
+  }
+  function check() {
+    const name = el('q-name'), phone = el('q-phone'), addr = el('q-addr');
+    const errs = [
+      [name, name.value.trim() ? '' : 'Add your name so Joseph knows who\'s texting.'],
+      [phone, phone.value.replace(/\D/g, '').length >= 10 ? '' : 'Enter a 10-digit phone number so he can reach you.'],
+      [addr, addr.value.trim().length >= 4 ? '' : 'Add your street and town for the estimate.']
+    ];
+    errs.forEach(([i, m]) => setErr(i, m));
+    const first = errs.find(e => e[1]);
+    if (first) first[0].focus();
+    return !first;
+  }
+  ['q-name', 'q-phone', 'q-addr'].forEach(id => el(id).addEventListener('input', e => {
+    if (e.target.closest('.f').classList.contains('bad')) setErr(e.target, '');
+  }));
+  function body() {
+    const n = parseInt(count.value, 10) || 1, msg = el('q-msg').value.trim();
+    return ['Hi Joseph! Window estimate request from your website.',
+      'Window type: ' + (f.querySelector('[name=type]:checked')?.value || 'Not sure'),
+      'Name: ' + el('q-name').value.trim(),
+      'Phone: ' + el('q-phone').value.trim(),
+      'Address: ' + el('q-addr').value.trim(),
+      'Windows: ' + n,
+      msg ? 'Notes: ' + msg : ''].filter(Boolean).join('\n');
+  }
+  f.addEventListener('submit', e => {
+    e.preventDefault();
+    if (!check()) return;
+    const text = body(), href = 'sms:' + PHONE_NUM + '?&body=' + encodeURIComponent(text);
+    el('sent-body').textContent = text; el('sent-sms').href = href;
+    f.classList.add('done'); f.dataset.href = href;
+    el('sent').querySelector('h3').focus?.();
+    location.href = href;
+  });
+  el('sent-copy').addEventListener('click', async () => {
+    const label = el('sent-copy').querySelector('span');
+    try { await navigator.clipboard.writeText(el('sent-body').textContent); label.textContent = 'Copied'; }
+    catch { label.textContent = 'Select and copy above'; }
+    setTimeout(() => { label.textContent = 'Copy message'; }, 2400);
+  });
+  document.querySelectorAll('.type[data-type]').forEach(a => a.addEventListener('click', () => {
+    const r = f.querySelector('[name=type][value="' + a.dataset.type + '"]'); if (r) r.checked = true;
+  }));
+  el('sent-edit').addEventListener('click', () => { f.classList.remove('done'); el('q-name').focus(); });
+})();
+
+/* ===== Sticky bar: shows once the hero buttons scroll away, hides at the form and close ===== */
+(() => {
+  const bar = document.getElementById('sticky');
+  const seen = new Map();
+  const io = new IntersectionObserver(es => {
+    es.forEach(e => seen.set(e.target.id, e.isIntersecting));
+    bar.classList.toggle('is-hidden', [...seen.values()].some(Boolean));
+  });
+  ['hero-actions', 'quote', 'close-actions'].forEach(id => io.observe(document.getElementById(id)));
+})();
+</script>
+</body>
+</html>

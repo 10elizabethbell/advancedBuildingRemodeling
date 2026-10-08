@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "dark-glow",
+        "value": "#14283c",
+        "createdAt": "2026-10-08T11:40:19.365Z",
+        "reason": "model triage: rgba(20,40,60) inset shadow is the vinyl frame's neutral navy shade falling onto the glass, not a chromatic halo"
+      }
+    ]
+  }
+}
