@@ -1,6 +1,6 @@
 # Advanced Building and Remodeling Associates — handoff at ~60%
 
-**Live file:** index.html · **Repo:** https://github.com/10elizabethbell/advancedBuildingRemodeling (private) · **Built:** 2026-10-08 from the Muse brief of 2026-10-08 (revised mid-build; page follows the revised `brief.md`)
+**Live:** https://10elizabethbell.github.io/advancedBuildingRemodeling/ (once Pages is on) · **Repo:** https://github.com/10elizabethbell/advancedBuildingRemodeling · **Built:** 2026-10-08 from the Muse brief of 2026-10-08 (revised mid-build; page follows the revised `brief.md`)
 
 ## What's built
 - **World: fogged window glass.** The hero is a white vinyl double-hung window at dusk over the bay, fogged with condensation. Mouse or finger wipes it clear, and the fog slowly comes back. Beads of water get shoved by the pointer and spring back with a wobble. Shove one hard enough and it breaks free and runs down, clearing a streak. Heavy beads run on their own. A ghost finger wipes an S across the glass at load (and again after ~9s idle until someone touches it), so the idea reads without instructions.
@@ -13,11 +13,12 @@
   - Amber credentials strip, with the license # and BuildZoom line.
   - All 33 Ocean County municipalities.
   - Close with the business name, and a footer.
-- **Contact:** every call link is `tel:+16093849030`, every text link is `sms:+16093849030`. The form (name, phone, address required; type chips; window-count stepper; notes) composes one text and opens it. A fallback panel shows the message with Open text / Copy and an Edit link. The sticky phone bar hides while the hero buttons, the form or the close buttons are on screen.
+- **Contact:** the phone number sits in the header's top-right corner (tap to call) and again only lower down (estimate section, footer). Hero buttons: Text for an estimate (filled) and Get an estimate (outlined, jumps to the form); no Call button, no sticky bar. The form (name, phone, address required; type chips; window-count stepper; notes) composes one text and opens it, with a fallback panel (Open text / Copy / Edit). Facebook: a dark button under the credentials strip (the page's only proof) and a footer link. No email anywhere: the brief has none.
 - **Motion budget:** one rAF loop. Each motion task pauses off-screen via IntersectionObserver. Reduced motion draws a still, pre-wiped frame. Phones get 42 beads instead of 80. Tunable constants are in the `C` object at the top of each IIFE.
 
-- **Phone first (taste §0):** the page is designed at 360–430px and adapted up for desktop. On phones the fogged window sits right under the Text/Call buttons, with a square glass and the wipe hint in the top sash. The sticky bar opens a prefilled text. There are no new-tab links, every tap target is 44px+, secondary text is 14px+, and nothing scrolls sideways at 360/390.
-- **Repo visibility:** private (created before the public-repo rule; left as is). `brief.md` IS committed; `src-assets/` is gitignored and empty.
+- **Phone first (taste §0):** designed at 360–430px and adapted up. On phones the fogged window sits right under the two hero buttons, square, with the wipe hint in the top sash. Wiping works in every direction (`touch-action: none` on the glass, pull-to-refresh off). No new-tab links, 44px+ tap targets, nothing scrolls sideways at 360/390.
+- **Finishing rules pass (2026-10-17):** no demo line; favicon and home-screen icon from the site's own lettering (heavy "A" with an amber bar; no logo exists); og image (`og.png`, the desktop first screen) and og tags pointed at the Pages URL; window types are short items (descriptions removed); type-row arrows turn amber on hover only; one blue (`--focus` #3d8fe0) hover/focus outline on every input, chip, stepper and button; copy in "we"; close section has one button (the footer carries the number).
+- **Repo visibility (old note):** private (created before the public-repo rule; left as is). `brief.md` IS committed; `src-assets/` is gitignored and empty.
 
 ## Assumptions I made
 - **No "free" anywhere.** The first brief said "Request a free estimate"; the revised brief and the flyer never say the estimate is free, so I removed it. Restore it if Joseph confirms.
@@ -31,6 +32,9 @@
 - **BuildZoom line** ("score 94, top 24% of NJ contractors", license verified Sept 2026) is quoted from the brief. It will go stale; re-check before showing him.
 
 ## Placeholders and gaps
+- **No email** in the brief, so the footer has none (the rules want one there). Ask Joseph.
+- **Facebook link goes to Joseph's personal profile**, which Muse couldn't view (not friends). If it's private, visitors see nothing; a business page would be better.
+- **Audience age:** replacement-window buyers in Ocean County likely skew 50+. The brief doesn't say, so the older-audience rules (no motion) are not applied. If they should be, the fogged window becomes a still picture.
 - **Whether (609) 384-9030 takes texts is unknown.** The form and the hero's primary button depend on it. If it's a landline, switch the primary action to Call and make the form show the message plus "call to read it over" (or add an email).
 - No logo file. The flyer image needs a logged-in Facebook browser, so it wasn't collected; its colors could replace mine.
 - No work photos, before/afters, reviews, hours, prices, years in business, ZIP code.
