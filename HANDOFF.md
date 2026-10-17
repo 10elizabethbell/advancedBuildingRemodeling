@@ -1,6 +1,6 @@
 # Advanced Building and Remodeling Associates — handoff at ~60%
 
-**Live:** https://10elizabethbell.github.io/advancedBuildingRemodeling/ (once Pages is on) · **Repo:** https://github.com/10elizabethbell/advancedBuildingRemodeling · **Built:** 2026-10-08 from the Muse brief of 2026-10-08 (revised mid-build; page follows the revised `brief.md`)
+**Live:** https://10elizabethbell.github.io/advancedBuildingRemodeling/ · **Repo:** https://github.com/10elizabethbell/advancedBuildingRemodeling (public) · **Built:** 2026-10-08 from the Muse brief of 2026-10-08 (revised mid-build; page follows the revised `brief.md`)
 
 ## What's built
 - **World: fogged window glass.** The hero is a white vinyl double-hung window at dusk over the bay, fogged with condensation. Mouse or finger wipes it clear, and the fog slowly comes back. Beads of water get shoved by the pointer and spring back with a wobble. Shove one hard enough and it breaks free and runs down, clearing a streak. Heavy beads run on their own. A ghost finger wipes an S across the glass at load (and again after ~9s idle until someone touches it), so the idea reads without instructions.
@@ -18,7 +18,7 @@
 
 - **Phone first (taste §0):** designed at 360–430px and adapted up. On phones the fogged window sits right under the two hero buttons, square, with the wipe hint in the top sash. Wiping works in every direction (`touch-action: none` on the glass, pull-to-refresh off). No new-tab links, 44px+ tap targets, nothing scrolls sideways at 360/390.
 - **Finishing rules pass (2026-10-17):** no demo line; favicon and home-screen icon from the site's own lettering (heavy "A" with an amber bar; no logo exists); og image (`og.png`, the desktop first screen) and og tags pointed at the Pages URL; window types are short items (descriptions removed); type-row arrows turn amber on hover only; one blue (`--focus` #3d8fe0) hover/focus outline on every input, chip, stepper and button; copy in "we"; close section has one button (the footer carries the number).
-- **Repo visibility (old note):** private (created before the public-repo rule; left as is). `brief.md` IS committed; `src-assets/` is gitignored and empty.
+- **Repo visibility:** public since 2026-10-17, served on GitHub Pages. `brief.md` is untracked and gitignored, but still readable in the first commit (e42f3dc).
 
 ## Assumptions I made
 - **No "free" anywhere.** The first brief said "Request a free estimate"; the revised brief and the flyer never say the estimate is free, so I removed it. Restore it if Joseph confirms.
