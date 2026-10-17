@@ -122,6 +122,12 @@
         "value": "rgba(61, 143, 224, .28)",
         "createdAt": "2026-10-17T20:47:00.092Z",
         "reason": "model triage: focus ring tint of --focus #3d8fe0, the one hover/focus outline accent the pitch-site finishing rules require"
+      },
+      {
+        "rule": "overused-font",
+        "value": "roboto",
+        "createdAt": "2026-10-17T21:22:48.983Z",
+        "reason": "model triage: Roboto is only a fallback in the system font stack that Ellie's house style (ellie-taste.md, Type) requires"
       }
     ]
   }
