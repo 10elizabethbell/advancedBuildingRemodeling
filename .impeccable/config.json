@@ -116,6 +116,12 @@
         "value": "2.3rem",
         "createdAt": "2026-10-08T12:10:41.094Z",
         "reason": "model triage: phone floor of the hero display size, set for Ellie's phone-first rule (taste section 0); consolidation left to Ellie"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgba(61, 143, 224, .28)",
+        "createdAt": "2026-10-17T20:47:00.092Z",
+        "reason": "model triage: focus ring tint of --focus #3d8fe0, the one hover/focus outline accent the pitch-site finishing rules require"
       }
     ]
   }
