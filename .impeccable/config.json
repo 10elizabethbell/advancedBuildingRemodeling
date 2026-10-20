@@ -128,6 +128,15 @@
         "value": "roboto",
         "createdAt": "2026-10-17T21:22:48.983Z",
         "reason": "model triage: Roboto is only a fallback in the system font stack that Ellie's house style (ellie-taste.md, Type) requires"
+      },
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-20T00:48:42.999Z",
+        "reason": "pitch-site calm-photo-style.md item 2: Ellie chose the faint 3.5% diagonal band texture on 2026-10-19"
       }
     ]
   }
