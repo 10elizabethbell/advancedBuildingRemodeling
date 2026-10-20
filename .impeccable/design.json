@@ -1,172 +1,142 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T11:52:55+00:00",
+  "generatedAt": "2026-10-20T00:51:57+00:00",
   "title": "Design System: Advanced Building and Remodeling Associates",
   "extensions": {
     "colorMeta": {
-      "wall": {
+      "paper": {
         "role": "neutral",
-        "displayName": "Dusk Navy Wall",
-        "canonical": "#1a3049",
+        "displayName": "Blue Paper",
+        "canonical": "#f4f6fb",
         "tonalRamp": [
-          "#000b21",
-          "#0f253d",
-          "#2b415b",
-          "#48607b",
-          "#67809d",
-          "#87a1c0",
-          "#acc7e7",
-          "#e0f0ff"
+          "#0a0b0e",
+          "#242529",
+          "#404246",
+          "#5f6165",
+          "#808287",
+          "#a3a5aa",
+          "#c7c9ce",
+          "#eceef3"
         ]
       },
-      "wall-deep": {
+      "card": {
         "role": "neutral",
-        "displayName": "Deep Wall",
-        "canonical": "#132539",
-        "tonalRamp": [
-          "#000b1d",
-          "#132539",
-          "#2e4157",
-          "#4b6077",
-          "#6a7f98",
-          "#8ba1ba",
-          "#b0c7e1",
-          "#e2f0ff"
-        ]
-      },
-      "wall-soft": {
-        "role": "neutral",
-        "displayName": "Soft Wall",
-        "canonical": "#24405e",
-        "tonalRamp": [
-          "#000a24",
-          "#092541",
-          "#264260",
-          "#436080",
-          "#6280a2",
-          "#82a2c5",
-          "#a7c8ec",
-          "#ddf1ff"
-        ]
-      },
-      "vinyl": {
-        "role": "neutral",
-        "displayName": "White Vinyl",
-        "canonical": "#f6f7f5",
-        "tonalRamp": [
-          "#0b0b0a",
-          "#242423",
-          "#3f403e",
-          "#5d5e5c",
-          "#7d7d7c",
-          "#9e9f9d",
-          "#c3c4c2",
-          "#eeefed"
-        ]
-      },
-      "vinyl-2": {
-        "role": "neutral",
-        "displayName": "Vinyl Bevel",
-        "canonical": "#e3e7e9",
-        "tonalRamp": [
-          "#090c0d",
-          "#222526",
-          "#3d4042",
-          "#5b5e60",
-          "#7a7e80",
-          "#9b9fa1",
-          "#c1c5c7",
-          "#eceff0"
-        ]
-      },
-      "vinyl-shade": {
-        "role": "neutral",
-        "displayName": "Vinyl Shade",
-        "canonical": "#cbd2d8",
-        "tonalRamp": [
-          "#070c10",
-          "#1f2529",
-          "#3b4145",
-          "#585e64",
-          "#787e84",
-          "#999fa5",
-          "#bec5cb",
-          "#ebeff3"
-        ]
-      },
-      "vinyl-white": {
-        "role": "neutral",
-        "displayName": "Vinyl White",
+        "displayName": "Card White",
         "canonical": "#ffffff",
         "tonalRamp": [
           "#0b0b0b",
-          "#242424",
-          "#404040",
-          "#5d5d5d",
-          "#7d7d7d",
-          "#9e9e9e",
-          "#c4c4c4",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
           "#eeeeee"
         ]
       },
       "ink": {
         "role": "neutral",
-        "displayName": "Navy Ink",
-        "canonical": "#15283c",
+        "displayName": "Deep Ink",
+        "canonical": "#0f2440",
         "tonalRamp": [
-          "#000b1d",
-          "#122539",
-          "#2e4157",
-          "#4b6077",
-          "#6a8098",
-          "#8aa1ba",
-          "#afc7e1",
-          "#e2f0ff"
+          "#000a23",
+          "#102541",
+          "#2d4361",
+          "#4b6383",
+          "#6b84a6",
+          "#8da7cb",
+          "#b1cbf0",
+          "#e5f0fe"
         ]
       },
-      "ink-soft": {
+      "body": {
         "role": "neutral",
-        "displayName": "Soft Ink",
-        "canonical": "#3e5266",
+        "displayName": "Slate Body",
+        "canonical": "#26364a",
         "tonalRamp": [
-          "#000c1c",
-          "#132537",
-          "#2e4255",
-          "#4b6074",
-          "#6a8095",
-          "#8ba1b8",
-          "#b0c7de",
-          "#e2f0ff"
+          "#010b1c",
+          "#172639",
+          "#334358",
+          "#516379",
+          "#72849b",
+          "#94a7bf",
+          "#b7cbe4",
+          "#e5f0fe"
         ]
       },
-      "on-wall": {
+      "soft": {
         "role": "neutral",
-        "displayName": "On-Wall",
-        "canonical": "#eef3f7",
+        "displayName": "Soft Slate",
+        "canonical": "#4a5868",
         "tonalRamp": [
-          "#080c0e",
-          "#212527",
-          "#3c4043",
-          "#5a5e62",
-          "#797e81",
-          "#9a9fa3",
-          "#c0c5c9",
-          "#eceff1"
+          "#030c18",
+          "#1a2634",
+          "#364353",
+          "#546373",
+          "#758495",
+          "#97a7b9",
+          "#bbcbde",
+          "#e4f0fe"
         ]
       },
-      "on-wall-soft": {
-        "role": "neutral",
-        "displayName": "On-Wall Soft",
-        "canonical": "#b9c9d7",
+      "navy": {
+        "role": "secondary",
+        "displayName": "Bay-Dusk Navy",
+        "canonical": "#1f4670",
         "tonalRamp": [
-          "#030c15",
-          "#192630",
-          "#34414d",
-          "#51606c",
-          "#717f8c",
-          "#91a1ae",
-          "#b6c6d4",
-          "#e6f0f9"
+          "#000a24",
+          "#00254c",
+          "#1c436d",
+          "#3c6490",
+          "#5d85b4",
+          "#7ea9d9",
+          "#a6cdfa",
+          "#e3f0ff"
+        ]
+      },
+      "deep": {
+        "role": "secondary",
+        "displayName": "Night Navy",
+        "canonical": "#0f2440",
+        "tonalRamp": [
+          "#000a23",
+          "#102541",
+          "#2d4361",
+          "#4b6383",
+          "#6b84a6",
+          "#8da7cb",
+          "#b1cbf0",
+          "#e5f0fe"
+        ]
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "Pale Night",
+        "canonical": "#f4f7fb",
+        "tonalRamp": [
+          "#090b0e",
+          "#232528",
+          "#404245",
+          "#5f6165",
+          "#808286",
+          "#a2a5a9",
+          "#c6c9cd",
+          "#eceff3"
+        ]
+      },
+      "on-dark-soft": {
+        "role": "neutral",
+        "displayName": "Mist on Night",
+        "canonical": "#c9d7ea",
+        "tonalRamp": [
+          "#040b18",
+          "#1b2634",
+          "#374352",
+          "#566273",
+          "#778395",
+          "#99a6b8",
+          "#bdcadd",
+          "#e5f0fe"
         ]
       },
       "amber": {
@@ -174,359 +144,185 @@
         "displayName": "Dusk Amber",
         "canonical": "#f2a65a",
         "tonalRamp": [
-          "#2a0000",
-          "#4a0600",
-          "#6c2a00",
-          "#8e4900",
-          "#b16a10",
-          "#d58b3e",
-          "#feb166",
-          "#ffe4b9"
+          "#190500",
+          "#391d00",
+          "#603602",
+          "#895211",
+          "#b76f19",
+          "#dd9245",
+          "#feb976",
+          "#ffead8"
         ]
       },
-      "amber-hover": {
+      "amber-2": {
         "role": "primary",
         "displayName": "Lit Amber",
-        "canonical": "#f6b673",
+        "canonical": "#f6bd80",
         "tonalRamp": [
-          "#260000",
-          "#451000",
-          "#652f00",
-          "#874e00",
-          "#aa6e28",
-          "#cd904d",
-          "#f5b572",
-          "#ffe6bf"
-        ]
-      },
-      "amber-deep": {
-        "role": "primary",
-        "displayName": "Burnt Amber",
-        "canonical": "#d9823a",
-        "tonalRamp": [
-          "#2d0000",
-          "#4f0000",
-          "#712200",
-          "#944300",
-          "#b86412",
-          "#dd863e",
-          "#ffac66",
-          "#ffe1b9"
-        ]
-      },
-      "amber-pale": {
-        "role": "primary",
-        "displayName": "Amber Pale",
-        "canonical": "#f8d3a8",
-        "tonalRamp": [
-          "#1c0300",
-          "#381c00",
-          "#57390e",
-          "#77572f",
-          "#98764e",
-          "#ba976e",
-          "#e1bd93",
-          "#ffead1"
+          "#180600",
+          "#381e00",
+          "#5e3801",
+          "#875410",
+          "#ab7639",
+          "#d0995c",
+          "#f6bd80",
+          "#feebd8"
         ]
       },
       "amber-ink": {
         "role": "primary",
-        "displayName": "Amber Ink",
-        "canonical": "#9a5218",
+        "displayName": "Burnt Amber Ink",
+        "canonical": "#8a4b0c",
         "tonalRamp": [
-          "#2a0000",
-          "#4b0500",
-          "#6c2800",
-          "#8f4807",
-          "#b26832",
-          "#d78954",
-          "#ffaf79",
-          "#ffe3c3"
+          "#1a0400",
+          "#3c1b00",
+          "#643403",
+          "#8e4f12",
+          "#b3703a",
+          "#d8935d",
+          "#fab989",
+          "#feeadd"
         ]
       },
-      "fog": {
+      "line": {
         "role": "neutral",
-        "displayName": "Fog",
-        "canonical": "#dfe8ee",
+        "displayName": "Hairline",
+        "canonical": "rgba(15,36,64,.12)",
         "tonalRamp": [
-          "#060c10",
-          "#1e2529",
-          "#3a4146",
-          "#575f64",
-          "#767f84",
-          "#97a0a5",
-          "#bdc6cb",
-          "#eaeff3"
+          "#000a23",
+          "#102541",
+          "#2d4361",
+          "#4b6383",
+          "#6b84a6",
+          "#8da7cb",
+          "#b1cbf0",
+          "#e5f0fe"
         ]
       },
-      "pane-glass": {
+      "field": {
         "role": "neutral",
-        "displayName": "Pane Glass",
-        "canonical": "#e6eef3",
+        "displayName": "Field Mist",
+        "canonical": "#e6ecf5",
         "tonalRamp": [
-          "#070c0f",
-          "#1f2529",
-          "#3a4145",
-          "#585f63",
-          "#777e83",
-          "#98a0a4",
-          "#bec5ca",
-          "#eaeff2"
+          "#080b11",
+          "#21252c",
+          "#3e4249",
+          "#5c6269",
+          "#7d838b",
+          "#a0a5ae",
+          "#c4cad2",
+          "#e9eff8"
         ]
       },
-      "pane-glass-deep": {
-        "role": "neutral",
-        "displayName": "Pane Glass Deep",
-        "canonical": "#d6e2ea",
+      "focus": {
+        "role": "secondary",
+        "displayName": "Focus Navy",
+        "canonical": "#1f4670",
         "tonalRamp": [
-          "#050c11",
-          "#1c252b",
-          "#384148",
-          "#555f66",
-          "#747f86",
-          "#95a0a8",
-          "#bac6ce",
-          "#e8f0f5"
-        ]
-      },
-      "field-face": {
-        "role": "neutral",
-        "displayName": "Field Face",
-        "canonical": "#fbfcfd",
-        "tonalRamp": [
-          "#0b0b0c",
-          "#232425",
-          "#3f4041",
-          "#5d5e5e",
-          "#7c7d7e",
-          "#9d9e9f",
-          "#c3c4c5",
-          "#eeeeef"
-        ]
-      },
-      "field-line": {
-        "role": "neutral",
-        "displayName": "Field Line",
-        "canonical": "#c3cfd9",
-        "tonalRamp": [
-          "#050c13",
-          "#1c252d",
-          "#374149",
-          "#555f68",
-          "#747f88",
-          "#95a0aa",
-          "#bac6d0",
-          "#e8f0f6"
-        ]
-      },
-      "field-placeholder": {
-        "role": "neutral",
-        "displayName": "Field Placeholder",
-        "canonical": "#5f7183",
-        "tonalRamp": [
-          "#010c19",
-          "#162535",
-          "#314252",
-          "#4e6071",
-          "#6d8092",
-          "#8ea1b4",
-          "#b3c7db",
-          "#e4f0fd"
+          "#000a24",
+          "#00254c",
+          "#1c436d",
+          "#3c6490",
+          "#5d85b4",
+          "#7ea9d9",
+          "#a6cdfa",
+          "#e3f0ff"
         ]
       },
       "error": {
-        "role": "error",
-        "displayName": "Error",
-        "canonical": "#b23a2a",
+        "role": "neutral",
+        "displayName": "Signal Red",
+        "canonical": "#b3261e",
         "tonalRamp": [
-          "#360000",
-          "#5a0000",
-          "#7f0000",
-          "#a42c1d",
-          "#ca503f",
-          "#f1735f",
-          "#ff9984",
-          "#ffd7c8"
+          "#210000",
+          "#4c0202",
+          "#7d0e0a",
+          "#b0221b",
+          "#d84c3f",
+          "#f97969",
+          "#fcb5aa",
+          "#fee9e5"
         ]
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "Hero headline only; 900 uppercase, second line in Dusk Amber."
+        "purpose": "Hero H1 only."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Section headlines, 900 uppercase; close headline runs larger."
+        "purpose": "One H2 per band."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Pane and form headings, 900 uppercase."
+        "purpose": "Step titles, service rows, claim lines, H3."
       },
-      "lede": {
-        "displayName": "Lede",
-        "purpose": "One paragraph under each headline, max 52ch."
+      "title-sm": {
+        "displayName": "Title Small",
+        "purpose": "Buttons, field labels, link rows, footer name, step numbers."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Running text, sentence case."
+        "purpose": "All running text and inputs; 18px floor for a 40+ audience."
       },
-      "label": {
-        "displayName": "Label",
-        "purpose": "Form labels and legends, sentence case."
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Paragraph under a band headline and the hero promise."
       },
-      "button": {
-        "displayName": "Button",
-        "purpose": "Button text, sentence case."
-      },
-      "credential": {
-        "displayName": "Credential",
-        "purpose": "Credential items on the amber strip, uppercase."
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "Hints, errors, claim sub-lines, message preview."
       }
     },
     "shadows": [
       {
-        "name": "frame-drop",
-        "value": "0 40px 70px -30px rgba(4,12,24,.8), 0 12px 24px -8px rgba(4,12,24,.45)",
-        "purpose": "Vinyl frame on the navy wall."
-      },
+        "name": "float-lift",
+        "value": "0 10px 28px rgba(8,24,46,.3)",
+        "purpose": "Floating text circle only."
+      }
+    ],
+    "textures": [
       {
-        "name": "lift",
-        "value": "0 18px 40px -18px rgba(8,20,36,.55), 0 4px 10px rgba(8,20,36,.18)",
-        "purpose": "Vinyl frame on the vinyl ground."
-      },
-      {
-        "name": "pane-inset",
-        "value": "inset 0 5px 10px -4px rgba(0,0,0,.27)",
-        "purpose": "Glass pane recessed under its frame."
-      },
-      {
-        "name": "glass-inset",
-        "value": "inset 0 6px 12px -4px rgba(0,0,0,.38), inset 0 -2px 8px rgba(0,0,0,.16)",
-        "purpose": "Hero glass."
-      },
-      {
-        "name": "sash",
-        "value": "inset 0 5px 9px -3px rgba(0,0,0,.32), 0 2px 6px rgba(0,0,0,.2)",
-        "purpose": "Double-hung sash borders."
-      },
-      {
-        "name": "card-rest",
-        "value": "0 10px 24px -16px rgba(8,20,36,.45), 0 2px 4px rgba(8,20,36,.06)",
-        "purpose": "Window-type rows at rest."
-      },
-      {
-        "name": "card-hover",
-        "value": "0 16px 30px -16px rgba(8,20,36,.5), 0 2px 4px rgba(8,20,36,.06)",
-        "purpose": "Window-type rows on hover, with a 2px rise."
-      },
-      {
-        "name": "button",
-        "value": "0 8px 18px -8px rgba(8,20,36,.5)",
-        "purpose": "Amber buttons only."
-      },
-      {
-        "name": "sill",
-        "value": "0 16px 24px -10px rgba(4,12,24,.7)",
-        "purpose": "Sill under the hero window."
-      },
-      {
-        "name": "sticky",
-        "value": "0 -10px 24px -12px rgba(4,12,24,.6)",
-        "purpose": "Phone sticky bar, with backdrop-filter blur(10px) over 94% Deep Wall."
-      },
-      {
-        "name": "focus-ring",
-        "value": "outline: 3px solid #f2a65a; outline-offset: 3px",
-        "purpose": "Global :focus-visible."
-      },
-      {
-        "name": "field-focus",
-        "value": "border-color: #d9823a; box-shadow: 0 0 0 4px rgba(242,166,90,.3)",
-        "purpose": "Field focus."
+        "name": "band-lines",
+        "value": "repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)",
+        "purpose": "Hero, night band and footer only."
       }
     ],
     "motion": [
       {
-        "name": "ease-settle",
-        "value": "cubic-bezier(.2,.8,.2,1)",
-        "purpose": "All UI transitions."
+        "name": "state-color",
+        "value": "background-color .2s, color .2s, border-color .2s",
+        "purpose": "All hover and state changes; colour only."
       },
       {
-        "name": "duration-field",
-        "value": "150ms",
-        "purpose": "Field and chip border/ring."
+        "name": "press",
+        "value": "transform .12s; scale(.98)",
+        "purpose": "Button press feedback."
       },
       {
-        "name": "duration-button",
-        "value": "200ms",
-        "purpose": "Buttons; press scale(.97)."
+        "name": "float-reveal",
+        "value": "opacity .25s, visibility .25s",
+        "purpose": "Floating circle show/hide."
       },
       {
-        "name": "duration-card",
-        "value": "250ms",
-        "purpose": "Type-row lift and arrow nudge."
-      },
-      {
-        "name": "duration-sticky",
-        "value": "350ms",
-        "purpose": "Sticky bar slide."
-      },
-      {
-        "name": "duration-hint",
-        "value": "600ms",
-        "purpose": "Wipe hint fade."
-      },
-      {
-        "name": "loop",
-        "value": "single shared requestAnimationFrame; dt capped at 50ms",
-        "purpose": "Every animated task registers here; loop stops when no task is active."
-      },
-      {
-        "name": "offscreen-pause",
-        "value": "IntersectionObserver rootMargin 80px",
-        "purpose": "Each task runs only while visible."
-      },
-      {
-        "name": "reduced-motion",
-        "value": "no rAF; still pre-wiped fog frame; hint hidden; scroll-behavior auto",
-        "purpose": "prefers-reduced-motion: reduce."
-      },
-      {
-        "name": "fog-engine-C",
-        "value": "FOG_SCALE .34, FOG_OPACITY .74, REFOG .16/s, WIPE_R 30, DROPS 80 (42 phone), PUSH_R 52, BREAK 13, SPRING 38, DAMP 6.5, GROW .07, RUN_AT 5.4, RUN_MAX 150, GHOST_EVERY 9, STREAKS 44 (26 phone)",
-        "purpose": "Tunable constants of the fogged glass engine."
-      },
-      {
-        "name": "seam-C",
-        "value": "STEP 20, SWELL 9, RIPPLE 3.2, SPEED 1.5, BUMP 16",
-        "purpose": "Tunable constants of the water-line seams."
+        "name": "motion-flag",
+        "value": "CONFIG.MOTION = false",
+        "purpose": "H1 letter bounce-in and 12px fade-up exist in code but ship off for the 40+ audience; reduced-motion always disables them."
       }
     ],
     "breakpoints": [
       {
-        "name": "fields-2col",
-        "value": "560px"
-      },
-      {
-        "name": "phone-max",
-        "value": "759px"
+        "name": "small-phone",
+        "value": "max-width: 380px"
       },
       {
         "name": "tablet",
         "value": "760px"
       },
       {
-        "name": "creds-row",
-        "value": "860px"
-      },
-      {
-        "name": "split",
-        "value": "900px"
-      },
-      {
-        "name": "estimate-split",
-        "value": "960px"
+        "name": "desktop",
+        "value": "1024px"
       }
     ]
   },
@@ -535,129 +331,126 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Dusk Amber pill for every primary action; leads with a line icon.",
-      "html": "<a class=\"ds-btn ds-btn-amber\" href=\"#\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 5.5h16v10H10l-4.5 3.5v-3.5H4z\"/><path d=\"M8 9.5h8M8 12.5h5\"/></svg>Text for an estimate</a>",
-      "css": ":host{--wall:#1a3049;--vinyl:#f6f7f5;--vinyl-2:#e3e7e9;--ink:#15283c;--ink-soft:#3e5266;--on-wall:#eef3f7;--amber:#f2a65a;--amber-deep:#d9823a;--amber-ink:#9a5218} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:56px;padding:0 1.4em;border-radius:999px;font:800 1rem/1 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;letter-spacing:.01em;text-decoration:none;cursor:pointer;border:2px solid var(--amber);transition:transform .2s cubic-bezier(.2,.8,.2,1),background-color .2s,color .2s} .ds-btn:active{transform:scale(.97)} .ds-btn:focus-visible{outline:3px solid var(--amber);outline-offset:3px} .ds-btn-amber{background:var(--amber);color:var(--ink);box-shadow:0 8px 18px -8px rgba(8,20,36,.5)} .ds-btn-amber:hover{background:#f6b673}"
+      "description": "The one amber action per view: estimate, text Joseph, submit.",
+      "html": "<button class=\"ds-btn ds-btn-primary\">Get an estimate</button>",
+      "css": ":host{--paper:#f4f6fb;--card:#fff;--ink:#0f2440;--body:#26364a;--soft:#4a5868;--navy:#1f4670;--deep:#0f2440;--on-dark:#f4f7fb;--on-dark-soft:#c9d7ea;--amber:#f2a65a;--amber-2:#f6bd80;--field:#e6ecf5;--focus:#1f4670;--error:#b3261e} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font-family:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;font-weight:400;font-size:20px;line-height:1;border:2px solid transparent;cursor:pointer;text-decoration:none;transition:background-color .2s,border-color .2s,transform .12s} .ds-btn:active{transform:scale(.98)} .ds-btn-primary{background:var(--amber);border-color:var(--amber);color:var(--ink)} .ds-btn-primary:hover{background:var(--amber-2);border-color:var(--amber-2)} .ds-btn-primary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}"
     },
     {
-      "name": "Line Button (on wall)",
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action on navy bands only.",
+      "html": "<div class=\"ds-navy\"><button class=\"ds-btn ds-btn-ghost\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Text Joseph</button></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#fff;--ink:#0f2440;--body:#26364a;--soft:#4a5868;--navy:#1f4670;--deep:#0f2440;--on-dark:#f4f7fb;--on-dark-soft:#c9d7ea;--amber:#f2a65a;--amber-2:#f6bd80;--field:#e6ecf5;--focus:#1f4670;--error:#b3261e} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font-family:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;font-weight:400;font-size:20px;line-height:1;border:2px solid transparent;cursor:pointer;text-decoration:none;transition:background-color .2s,border-color .2s,transform .12s} .ds-btn:active{transform:scale(.98)} .ds-navy{background:var(--navy);padding:24px} .ds-btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,247,251,.7)} .ds-btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)} .ds-btn-ghost:focus-visible{outline:3px solid var(--amber);outline-offset:3px}"
+    },
+    {
+      "name": "Line Button",
       "kind": "button",
       "refersTo": "button-line",
-      "description": "Second channel beside the amber button on the navy wall.",
-      "html": "<div class=\"ds-wall\"><a class=\"ds-btn ds-btn-line\" href=\"#\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 3.5h3.2l1.6 4.2-2.1 1.4a11 11 0 0 0 5.2 5.2l1.4-2.1 4.2 1.6V17a2.5 2.5 0 0 1-2.7 2.5C9.4 19 5 14.6 4.5 6.2A2.5 2.5 0 0 1 5 3.5Z\"/></svg>Call (609) 384-9030</a></div>",
-      "css": ":host{--wall:#1a3049;--vinyl:#f6f7f5;--vinyl-2:#e3e7e9;--ink:#15283c;--ink-soft:#3e5266;--on-wall:#eef3f7;--amber:#f2a65a;--amber-deep:#d9823a;--amber-ink:#9a5218} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:56px;padding:0 1.4em;border-radius:999px;font:800 1rem/1 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;letter-spacing:.01em;text-decoration:none;cursor:pointer;border:2px solid var(--amber);transition:transform .2s cubic-bezier(.2,.8,.2,1),background-color .2s,color .2s} .ds-btn:active{transform:scale(.97)} .ds-btn:focus-visible{outline:3px solid var(--amber);outline-offset:3px} .ds-wall{background:var(--wall);padding:24px} .ds-btn-line{background:transparent;color:var(--on-wall)} .ds-btn-line:hover{background:rgba(242,166,90,.14)}"
+      "description": "Secondary action on light grounds.",
+      "html": "<button class=\"ds-btn ds-btn-line\">Copy message</button>",
+      "css": ":host{--paper:#f4f6fb;--card:#fff;--ink:#0f2440;--body:#26364a;--soft:#4a5868;--navy:#1f4670;--deep:#0f2440;--on-dark:#f4f7fb;--on-dark-soft:#c9d7ea;--amber:#f2a65a;--amber-2:#f6bd80;--field:#e6ecf5;--focus:#1f4670;--error:#b3261e} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font-family:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;font-weight:400;font-size:20px;line-height:1;border:2px solid transparent;cursor:pointer;text-decoration:none;transition:background-color .2s,border-color .2s,transform .12s} .ds-btn:active{transform:scale(.98)} .ds-btn-line{background:transparent;color:var(--ink);border-color:rgba(15,36,64,.35)} .ds-btn-line:focus-visible{outline:3px solid var(--focus);outline-offset:3px}"
     },
     {
       "name": "Text Field",
       "kind": "input",
-      "refersTo": "field",
-      "description": "Form input on the glass pane; amber border and ring on focus.",
-      "html": "<label class=\"ds-label\" for=\"ds-n\">Name</label><input class=\"ds-field\" id=\"ds-n\" placeholder=\"e.g. 12 Bay Ave, Barnegat\">",
-      "css": ":host{--wall:#1a3049;--vinyl:#f6f7f5;--vinyl-2:#e3e7e9;--ink:#15283c;--ink-soft:#3e5266;--on-wall:#eef3f7;--amber:#f2a65a;--amber-deep:#d9823a;--amber-ink:#9a5218} .ds-label{display:block;font:800 .92rem/1.55 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;color:var(--ink);margin-bottom:6px} .ds-field{width:100%;box-sizing:border-box;font:500 1.02rem/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;color:var(--ink);padding:13px 14px;border-radius:10px;border:2px solid #c3cfd9;background:#fbfcfd;transition:border-color .15s,box-shadow .15s} .ds-field::placeholder{color:#5f7183} .ds-field:hover{border-color:var(--amber-deep)} .ds-field:focus{outline:none;border-color:var(--amber-deep);box-shadow:0 0 0 4px rgba(242,166,90,.3)}"
+      "refersTo": "input",
+      "description": "Field-mist input with a Cal Sans label above; navy border on hover and focus.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-label\">Your street and town <small>(e.g. Bay Ave, Barnegat)</small></span><input class=\"ds-input\" type=\"text\"></label>",
+      "css": ":host{--paper:#f4f6fb;--card:#fff;--ink:#0f2440;--body:#26364a;--soft:#4a5868;--navy:#1f4670;--deep:#0f2440;--on-dark:#f4f7fb;--on-dark-soft:#c9d7ea;--amber:#f2a65a;--amber-2:#f6bd80;--field:#e6ecf5;--focus:#1f4670;--error:#b3261e} .ds-field{display:grid;gap:8px;max-width:420px} .ds-label{font-family:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;font-weight:400;font-size:20px;line-height:1.2;color:var(--ink)} .ds-label small{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:16px;color:var(--soft);margin-left:4px} .ds-input{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:18px;line-height:1.4;color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:10px;padding:13px 14px;min-height:56px;caret-color:var(--navy);transition:border-color .15s} .ds-input:hover,.ds-input:focus{outline:none;border-color:var(--focus)}"
     },
     {
-      "name": "Choice Chip",
+      "name": "Choice Chips",
       "kind": "chip",
       "refersTo": "chip",
-      "description": "Single-choice window type; selected fills Dusk Amber.",
-      "html": "<div class=\"ds-chips\"><label><input type=\"radio\" name=\"ds-t\"><span>Double</span></label><label><input type=\"radio\" name=\"ds-t\"><span>Bay</span></label><label><input type=\"radio\" name=\"ds-t\" checked><span>Mix / not sure</span></label></div>",
-      "css": ":host{--wall:#1a3049;--vinyl:#f6f7f5;--vinyl-2:#e3e7e9;--ink:#15283c;--ink-soft:#3e5266;--on-wall:#eef3f7;--amber:#f2a65a;--amber-deep:#d9823a;--amber-ink:#9a5218} .ds-chips{display:flex;flex-wrap:wrap;gap:8px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif} .ds-chips label{position:relative} .ds-chips input{position:absolute;opacity:0;width:1px;height:1px} .ds-chips span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;cursor:pointer;border:2px solid #c3cfd9;background:#fbfcfd;color:var(--ink);font-weight:700;font-size:.95rem;transition:background-color .15s,border-color .15s} .ds-chips span:hover{border-color:var(--amber-deep)} .ds-chips input:checked+span{background:var(--amber);border-color:var(--amber)} .ds-chips input:focus-visible+span{outline:3px solid var(--amber-deep);outline-offset:2px}"
+      "description": "Pill radio labels; selected fills deep ink.",
+      "html": "<div class=\"ds-chips\"><span class=\"ds-chip\">Double</span><span class=\"ds-chip ds-on\">Picture</span><span class=\"ds-chip\">Bay</span><span class=\"ds-chip\">Not sure</span></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#fff;--ink:#0f2440;--body:#26364a;--soft:#4a5868;--navy:#1f4670;--deep:#0f2440;--on-dark:#f4f7fb;--on-dark-soft:#c9d7ea;--amber:#f2a65a;--amber-2:#f6bd80;--field:#e6ecf5;--focus:#1f4670;--error:#b3261e} .ds-chips{display:flex;flex-wrap:wrap;gap:10px} .ds-chip{display:inline-flex;align-items:center;min-height:52px;padding:0 18px;border-radius:999px;background:var(--field);border:2px solid transparent;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:18px;line-height:1;color:var(--ink);cursor:pointer;transition:border-color .15s,background-color .15s} .ds-chip:hover{border-color:var(--focus)} .ds-on{background:var(--ink);color:var(--on-dark)}"
     },
     {
-      "name": "Window-Type Row",
-      "kind": "card",
-      "refersTo": "type-row",
-      "description": "Whole-row link: drawn window icon, uppercase name, amber arrow disc.",
-      "html": "<a class=\"ds-type\" href=\"#\"><svg class=\"ds-wicon\" viewBox=\"0 0 48 48\" aria-hidden=\"true\"><rect x=\"10\" y=\"4\" width=\"28\" height=\"40\" rx=\"2\"/><path d=\"M10 24h28M14 8h20v13H14zM14 27h20v13H14z\" stroke-width=\"1.6\"/></svg><span><b>Double windows</b><small>Two sashes that slide up and down.</small></span><span class=\"ds-go\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a>",
-      "css": ":host{--wall:#1a3049;--vinyl:#f6f7f5;--vinyl-2:#e3e7e9;--ink:#15283c;--ink-soft:#3e5266;--on-wall:#eef3f7;--amber:#f2a65a;--amber-deep:#d9823a;--amber-ink:#9a5218} .ds-type{display:grid;grid-template-columns:56px 1fr 44px;gap:16px;align-items:center;padding:16px 16px 16px 14px;border-radius:14px;text-decoration:none;color:var(--ink);background:#fdfdfc;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;box-shadow:0 10px 24px -16px rgba(8,20,36,.45),0 2px 4px rgba(8,20,36,.06);transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s} .ds-type:hover{transform:translateY(-2px);box-shadow:0 16px 30px -16px rgba(8,20,36,.5),0 2px 4px rgba(8,20,36,.06)} .ds-type:focus-visible{outline:3px solid var(--amber);outline-offset:3px} .ds-type b{display:block;font-weight:900;text-transform:uppercase;font-size:1.12rem} .ds-type small{display:block;margin-top:3px;color:var(--ink-soft);font-size:.95rem;line-height:1.4} .ds-wicon{width:56px;height:56px;fill:#dfe8ee;stroke:#24405e;stroke-width:2;stroke-linejoin:round} .ds-go{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--amber);color:var(--ink);transition:transform .25s cubic-bezier(.2,.8,.2,1)} .ds-type:hover .ds-go{transform:translateX(3px)}"
-    },
-    {
-      "name": "Four-Lite Window",
+      "name": "Link Row",
       "kind": "custom",
-      "refersTo": "vinyl-frame",
-      "description": "Vinyl frame with a 14px mullion holding recessed glass panes of title plus body; no icons in panes.",
-      "html": "<div class=\"ds-lites\"><div class=\"ds-lite\"><h3>Lower energy bills</h3><p>Built to hold heat in through the winter.</p></div><div class=\"ds-lite\"><h3>Nothing to paint</h3><p>Vinyl frames don't peel, rot or need scraping.</p></div></div>",
-      "css": ":host{--wall:#1a3049;--vinyl:#f6f7f5;--vinyl-2:#e3e7e9;--ink:#15283c;--ink-soft:#3e5266;--on-wall:#eef3f7;--amber:#f2a65a;--amber-deep:#d9823a;--amber-ink:#9a5218} .ds-lites{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:14px;border-radius:12px;background:linear-gradient(160deg,#fff,var(--vinyl-2));box-shadow:0 18px 40px -18px rgba(8,20,36,.55),0 4px 10px rgba(8,20,36,.18);font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif} .ds-lite{padding:26px;border-radius:4px;background:linear-gradient(170deg,#e6eef3,#d6e2ea);box-shadow:inset 0 5px 10px -4px rgba(0,0,0,.27);color:var(--ink)} .ds-lite h3{margin:0;font-size:1.5rem;font-weight:900;line-height:1.02;text-transform:uppercase} .ds-lite p{margin:8px 0 0;color:var(--ink-soft);line-height:1.55}"
+      "refersTo": "link-row",
+      "description": "White rounded row on paper; only the arrow disc changes on hover.",
+      "html": "<div class=\"ds-paper\"><a class=\"ds-row\" href=\"#\"><span>See us on BuildZoom</span><span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#fff;--ink:#0f2440;--body:#26364a;--soft:#4a5868;--navy:#1f4670;--deep:#0f2440;--on-dark:#f4f7fb;--on-dark-soft:#c9d7ea;--amber:#f2a65a;--amber-2:#f6bd80;--field:#e6ecf5;--focus:#1f4670;--error:#b3261e} .ds-paper{background:var(--paper);padding:24px} .ds-row{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:72px;max-width:460px;padding:14px 16px 14px 22px;border-radius:20px;background:var(--card);color:var(--ink);text-decoration:none;font-family:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;font-weight:400;font-size:20px;line-height:1.2} .ds-arrow{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(15,36,64,.07);transition:background-color .2s} .ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:var(--amber)} .ds-row:focus-visible{outline:none} .ds-row:focus-visible .ds-arrow{outline:3px solid var(--focus);outline-offset:3px}"
     },
     {
-      "name": "Double-Hung Window",
+      "name": "Service Row",
       "kind": "custom",
-      "refersTo": "vinyl-frame",
-      "description": "Hero frame: two sashes, meeting rail with lock, overhanging sill, fogged dusk glass (static fallback shown; the live version is the canvas engine).",
-      "html": "<div class=\"ds-win\"><div class=\"ds-frame\"><div class=\"ds-glass\"><div class=\"ds-sash ds-up\"></div><div class=\"ds-sash ds-low\"></div><div class=\"ds-rail\"></div></div></div><div class=\"ds-sill\"></div></div>",
-      "css": ".ds-win{width:220px;padding:24px;background:#1a3049} .ds-frame{padding:12px;border-radius:3px;background:linear-gradient(160deg,#fff 0%,#f6f7f5 45%,#e3e7e9 100%);box-shadow:0 40px 70px -30px rgba(4,12,24,.8),0 12px 24px -8px rgba(4,12,24,.45)} .ds-glass{position:relative;aspect-ratio:4/5;border-radius:4px;overflow:hidden;background:linear-gradient(rgba(214,226,235,.74),rgba(222,232,240,.82)),linear-gradient(#22405f 0%,#46607d 38%,#e9a46a 58%,#2a4764 60%,#1e3753 100%)} .ds-sash{position:absolute;left:0;right:0;height:calc(50% + 4px);border:6px solid #fff;box-sizing:border-box;box-shadow:inset 0 5px 9px -3px rgba(0,0,0,.32),0 2px 6px rgba(0,0,0,.2)} .ds-up{top:0} .ds-low{bottom:0;z-index:1} .ds-rail{position:absolute;z-index:2;left:0;right:0;top:50%;height:18px;transform:translateY(-50%);border-radius:3px;background:linear-gradient(#fff,#f6f7f5 50%,#e3e7e9);box-shadow:0 6px 10px -3px rgba(0,0,0,.34)} .ds-rail::after{content:'';position:absolute;left:50%;top:3px;width:30px;height:9px;margin-left:-15px;border-radius:5px;background:linear-gradient(#c9c2b5,#a9a194)} .ds-sill{height:12px;margin:0 -10px;border-radius:4px;background:linear-gradient(#fff,#e3e7e9);box-shadow:0 16px 24px -10px rgba(4,12,24,.7)}"
+      "refersTo": "service-row",
+      "description": "Window-type row on the textured night band.",
+      "html": "<div class=\"ds-night\"><a class=\"ds-type\" href=\"#\"><svg viewBox=\"0 0 48 48\" width=\"44\" height=\"44\"><g fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"9\" width=\"42\" height=\"30\" rx=\"2\"/><rect x=\"8\" y=\"14\" width=\"32\" height=\"20\" stroke-width=\"2\"/></g></svg><span class=\"ds-name\">Picture windows</span><span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#fff;--ink:#0f2440;--body:#26364a;--soft:#4a5868;--navy:#1f4670;--deep:#0f2440;--on-dark:#f4f7fb;--on-dark-soft:#c9d7ea;--amber:#f2a65a;--amber-2:#f6bd80;--field:#e6ecf5;--focus:#1f4670;--error:#b3261e} .ds-night{background-color:var(--deep);background-image:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);padding:24px} .ds-type{display:flex;align-items:center;gap:16px;min-height:80px;padding:14px 16px 14px 18px;border-radius:20px;background:rgba(255,255,255,.07);color:var(--on-dark);text-decoration:none;font-family:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;font-weight:400;font-size:24px;line-height:1.15} .ds-type svg:first-child{color:var(--on-dark-soft);flex:none} .ds-name{flex:1} .ds-arrow{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.12);transition:background-color .2s,color .2s} .ds-type:hover .ds-arrow,.ds-type:focus-visible .ds-arrow{background:var(--amber);color:var(--ink)} .ds-type:focus-visible{outline:none} .ds-type:focus-visible .ds-arrow{outline:3px solid var(--amber);outline-offset:3px}"
     },
     {
-      "name": "Credentials Strip",
+      "name": "Numbered Steps",
       "kind": "custom",
-      "refersTo": "credentials-strip",
-      "description": "Full-bleed amber band, 900 uppercase credentials with line icons; seams on both edges in the live page.",
-      "html": "<ul class=\"ds-creds\"><li><svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 3l7.5 3v5.5c0 4.6-3.2 8.2-7.5 9.5-4.3-1.3-7.5-4.9-7.5-9.5V6z\"/><path d=\"M8.6 12.2l2.4 2.4 4.4-4.6\"/></svg><span>Licensed<small>NJ HIC #13VH10689900</small></span></li></ul>",
-      "css": ":host{--wall:#1a3049;--vinyl:#f6f7f5;--vinyl-2:#e3e7e9;--ink:#15283c;--ink-soft:#3e5266;--on-wall:#eef3f7;--amber:#f2a65a;--amber-deep:#d9823a;--amber-ink:#9a5218} .ds-creds{list-style:none;margin:0;padding:30px 24px;background:var(--amber);color:var(--ink);font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif} .ds-creds li{display:flex;align-items:center;gap:10px;font-weight:900;text-transform:uppercase;letter-spacing:.03em;font-size:.98rem;line-height:1.15} .ds-creds small{display:block;font-size:.78rem;font-weight:700;letter-spacing:.01em;text-transform:none;margin-top:2px}"
+      "refersTo": "step-number",
+      "description": "Amber number discs with Cal Sans titles.",
+      "html": "<ol class=\"ds-steps\"><li><b>Send us your details.</b><span>Your name, your street and which windows.</span></li><li><b>Joseph comes to your house.</b><span>He looks at the windows with you.</span></li></ol>",
+      "css": ":host{--paper:#f4f6fb;--card:#fff;--ink:#0f2440;--body:#26364a;--soft:#4a5868;--navy:#1f4670;--deep:#0f2440;--on-dark:#f4f7fb;--on-dark-soft:#c9d7ea;--amber:#f2a65a;--amber-2:#f6bd80;--field:#e6ecf5;--focus:#1f4670;--error:#b3261e} .ds-steps{list-style:none;margin:0;padding:0;display:grid;gap:22px;counter-reset:s;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:18px;line-height:1.6} .ds-steps li{display:grid;grid-template-columns:48px 1fr;column-gap:16px;counter-increment:s} .ds-steps li::before{content:counter(s);grid-row:1/3;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--amber);color:var(--ink);font-family:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;font-weight:400;font-size:20px;line-height:1} .ds-steps b{font-family:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;font-weight:400;font-size:24px;line-height:1.2;color:var(--ink);margin-top:4px} .ds-steps span{color:var(--soft)}"
+    },
+    {
+      "name": "Floating Text Circle",
+      "kind": "custom",
+      "refersTo": "float-text",
+      "description": "The single persistent action, bottom-right.",
+      "html": "<a class=\"ds-float\" href=\"#\" aria-label=\"Text Joseph\"><svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ":host{--paper:#f4f6fb;--card:#fff;--ink:#0f2440;--body:#26364a;--soft:#4a5868;--navy:#1f4670;--deep:#0f2440;--on-dark:#f4f7fb;--on-dark-soft:#c9d7ea;--amber:#f2a65a;--amber-2:#f6bd80;--field:#e6ecf5;--focus:#1f4670;--error:#b3261e} .ds-float{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--amber);color:var(--ink);box-shadow:0 10px 28px rgba(8,24,46,.3)} .ds-float:hover{background:var(--amber-2)} .ds-float:focus-visible{outline:3px solid var(--focus);outline-offset:3px}"
     }
   ],
   "narrative": {
-    "northStar": "The Fogged Window at Dusk",
-    "overview": "The page is the installer's product. A navy wall at dusk holds white vinyl windows, and every content container is either a pane of glass in a vinyl frame or the wall around it. The hero is a working double-hung window: fogged condensation you wipe clear with a finger or cursor, beads that get shoved and spring back, heavy beads that run and leave a streak, and a dusk scene over the bay behind it. Amber is the light coming in off the bay, and it marks every action.\n\nDensity is low and direct, like a flyer: one heavy uppercase headline per section, one short lede, then something you can press. Sections alternate between the navy wall and the white vinyl ground. Animated water-line seams straddle each boundary, so you never see a hard edge between sections. Depth is physical. Frames cast long soft drop shadows onto the wall, and glass sits recessed under an inset shadow from the frame above it.\n\nThis system was recorded after an unattended, code-led build. The direction was unseeded: no concept-seed roll, fogged window chosen first of six worlds, with drafts-and-curtains as the runner-up. A finish review's eight material fixes were all applied before this record: real double-hung sash structure, white vinyl tokens, seams straddling section edges with shaded beads, `amber-ink` for amber text on light grounds, card icons removed from the four-lite panes, focus moved to the confirmation, and seams around the credentials strip. No raster assets ship. Every image is CSS, inline SVG, or canvas painted at runtime.",
+    "northStar": "The Calm Band",
+    "overview": "The page is a stack of full-width colour bands that alternate between off-white paper, bay-dusk navy and a deeper navy at night. Each band carries one idea, set large in Cal Sans with plenty of room around it, and a single warm dusk-amber tells the eye where to press. The world is built for a homeowner over 40 reading on a phone: 18px body at 1.6, 56px tap targets, high-contrast ink, and a page that holds still.\n\nDensity is low and the order is fixed: say who and where, prove the license, show the windows, ask for the estimate, give the number. Surfaces are flat colour; depth comes from the band change and from white cards sitting on paper, never from shadows (the one exception is the floating text circle, which has to sit above content). There are no photographs in this system; drawn line icons (2.2 to 2.6px strokes, round caps) in navy carry the imagery.\n\nMotion exists in code (a letter bounce-in for the H1, a 12px fade-up below the fold) but ships switched off (`CONFIG.MOTION = false`). The resting state is the design.",
     "keyCharacteristics": [
-      "Dusk navy wall, white vinyl frames with soft bevel gradients, blue-white fogged glass, one amber light.",
-      "Heavy uppercase system sans for headings; sentence case for body, buttons and labels.",
-      "Content sits in panes: recessed glass inside vinyl frames, separated by a 14px mullion.",
-      "Water-line seams with riding beads straddle every section boundary.",
-      "One rAF loop for all motion. Motion pauses off-screen, and reduced motion gets a still, pre-wiped frame."
+      "Full-bleed bands: paper, navy, deep navy with a faint diagonal line texture.",
+      "One warm accent, dusk amber, used as a fill; text on it is always deep ink.",
+      "Cal Sans at weight 400 for every heading, button, label and number; system sans for reading.",
+      "Soft, large radii: 24px cards, 20px rows, pill buttons and chips.",
+      "Still by default; every hover is a colour change only."
     ],
     "rules": [
       {
-        "name": "The Dusk Light Rule",
-        "body": "Amber is the only warm color and it means \"act here\" or \"this is the light.\" Every primary action is amber, and no other hue is introduced for emphasis.",
+        "name": "The Amber Is a Fill Rule",
+        "body": "Amber appears as a solid shape (button, disc, dot, circle) with deep ink on top. On paper, amber text switches to burnt amber ink; bright amber text is allowed only on navy grounds.",
         "section": "colors"
       },
       {
-        "name": "The Amber Ink Rule",
-        "body": "Dusk Amber is never text on a light ground. Amber words on vinyl or glass use Amber Ink. Dusk Amber text appears only on the navy wall.",
+        "name": "The Two Focus Colours Rule",
+        "body": "On light bands focus is a 3px navy outline at 3px offset; on navy and night bands it switches to amber. Focus never uses the same colour as the fill it surrounds.",
         "section": "colors"
       },
       {
-        "name": "The Two Grounds Rule",
-        "body": "Sections alternate wall and vinyl. The amber credentials strip is the single exception, and it is still bounded by seams on both sides.",
-        "section": "colors"
-      },
-      {
-        "name": "The Heavy Caps Rule",
-        "body": "Only headings, titles, the wordmark and credentials are 900 uppercase. Buttons, labels, ledes and body stay in sentence case at 800 or less, so the caps keep their punch.",
+        "name": "The Display Does the Talking Rule",
+        "body": "Anything a visitor taps or scans (buttons, labels, rows, phone numbers) is set in Cal Sans; only prose and form input use the system face.",
         "section": "typography"
       },
       {
-        "name": "The Balanced Head Rule",
-        "body": "Headings use `text-wrap: balance` and paragraphs `text-wrap: pretty`. Long headlines break by hand (`<br>`) at the phrase, as in \"New windows. / Installed sooner.\"",
+        "name": "The Phone Number Rule",
+        "body": "Phone numbers are Cal Sans with tabular figures, word-spacing -0.15em, never wrapping inside the number.",
         "section": "typography"
       },
       {
-        "name": "The Light From Above Rule",
-        "body": "Shadows fall down. Drop shadows have positive y-offsets and negative spread, and inset shadows come from the top edge. A shadow that points sideways or up is wrong.",
+        "name": "The No-Lift Hover Rule",
+        "body": "Hover never adds a shadow or moves an element. It changes a colour: a row's arrow disc turns amber, a field border turns navy, amber lightens.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do put important content in a window: a vinyl frame (12px, 14px mullion) holding recessed glass panes (4px, pane inset).",
-      "Do make every primary action a Dusk Amber pill at least 56px tall, paired with a line button for the other channel.",
-      "Do use Amber Ink for any amber text on vinyl, glass or white.",
-      "Do separate sections with a seam that straddles the edge and fills with the next section's color, including around the amber strip.",
-      "Do register any new animation with the shared loop, gate it with `watchVisible`, give it a still reduced-motion frame, and expose its tunables in a `C` object.",
-      "Do draw water as filled, shaded beads with one soft highlight.",
-      "Do keep headings 900 uppercase and everything else sentence case.",
-      "Do paint imagery in CSS, SVG or canvas. If real install photos arrive, they go inside vinyl frames as glass panes."
+      "**Do** keep body copy at 18px/1.6 and every tap target at least 44px (buttons and fields 56px).",
+      "**Do** alternate bands paper, navy, night; put the line texture only on navy-family grounds.",
+      "**Do** put deep ink on amber, and switch amber text to burnt amber ink on paper.",
+      "**Do** set headings, buttons, labels and phone numbers in Cal Sans 400.",
+      "**Do** ship still: motion stays behind `CONFIG.MOTION` and off for this audience."
     ],
     "donts": [
-      "Don't use the contractor template the thesis refuses: a stock house photo, a blue banner, or a grid of service cards.",
-      "Don't set Dusk Amber text on a light ground, or introduce a second accent hue.",
-      "Don't put icons inside the four-lite glass panes. Panes hold words.",
-      "Don't draw a double-hung window without both sashes, the meeting rail and its lock. A single framed rectangle is not this product.",
-      "Don't start a second requestAnimationFrame loop or animate anything while it is off-screen.",
-      "Don't draw beads as hairline glints or outline rings.",
-      "Don't use hard offset shadows, glows or sideways shadows. Light comes from above.",
-      "Don't let a seam sit entirely inside one section or end in a straight edge.",
-      "Don't add a small uppercase label above a headline. Section openings start with the headline itself."
+      "**Don't** use amber as body or label text on light grounds.",
+      "**Don't** add shadows to cards, rows or buttons; the floating circle is the only lifted element.",
+      "**Don't** make hover move, lift or glow anything.",
+      "**Don't** add a sticky bottom call bar; the single floating circle is the persistent action.",
+      "**Don't** add eyebrow labels above headings on new surfaces; the three pills on index.html are carried by the build, not a pattern to extend.",
+      "**Don't** use Cal Sans bold or a second display face; the system has one display weight."
     ]
   }
 }

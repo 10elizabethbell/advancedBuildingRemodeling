@@ -4,130 +4,16 @@
     "ignoreFiles": [],
     "ignoreValues": [
       {
-        "rule": "dark-glow",
-        "value": "#14283c",
-        "createdAt": "2026-10-08T11:40:19.365Z",
-        "reason": "model triage: rgba(20,40,60) inset shadow is the vinyl frame's neutral navy shade falling onto the glass, not a chromatic halo"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "#bead",
-        "createdAt": "2026-10-08T11:53:39.065Z",
-        "reason": "model triage: false positive, parsed from the SVG gradient reference url(#bead), not a color"
-      },
-      {
-        "rule": "design-system-radius",
-        "value": "6px",
-        "createdAt": "2026-10-08T11:53:39.130Z",
-        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
-      },
-      {
-        "rule": "design-system-radius",
-        "value": "7px",
-        "createdAt": "2026-10-08T11:53:39.194Z",
-        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "1.15rem",
-        "createdAt": "2026-10-08T11:53:39.259Z",
-        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": ".78rem",
-        "createdAt": "2026-10-08T11:53:39.324Z",
-        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "1.25rem",
-        "createdAt": "2026-10-08T11:53:39.387Z",
-        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": ".88rem",
-        "createdAt": "2026-10-08T11:53:39.452Z",
-        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": ".86rem",
-        "createdAt": "2026-10-08T11:53:39.517Z",
-        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": ".8rem",
-        "createdAt": "2026-10-08T11:53:39.581Z",
-        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "4.2rem",
-        "createdAt": "2026-10-08T11:53:39.646Z",
-        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": ".85rem",
-        "createdAt": "2026-10-08T11:53:39.712Z",
-        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "#e9a46a",
-        "createdAt": "2026-10-08T11:53:39.777Z",
-        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "#1e3753",
-        "createdAt": "2026-10-08T11:53:39.842Z",
-        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "rgba(0, 0, 0, 0.34)",
-        "createdAt": "2026-10-08T11:53:39.906Z",
-        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "#c9c2b5",
-        "createdAt": "2026-10-08T11:53:39.970Z",
-        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "#a9a194",
-        "createdAt": "2026-10-08T11:53:40.035Z",
-        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "rgba(0, 0, 0, 0.30)",
-        "createdAt": "2026-10-08T11:53:40.100Z",
-        "reason": "model triage: shipped value in the 60% pitch build that DESIGN.md (derived after build) did not canonize; consolidation left to Ellie, noted in HANDOFF.md"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "2.3rem",
-        "createdAt": "2026-10-08T12:10:41.094Z",
-        "reason": "model triage: phone floor of the hero display size, set for Ellie's phone-first rule (taste section 0); consolidation left to Ellie"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "rgba(61, 143, 224, .28)",
-        "createdAt": "2026-10-17T20:47:00.092Z",
-        "reason": "model triage: focus ring tint of --focus #3d8fe0, the one hover/focus outline accent the pitch-site finishing rules require"
-      },
-      {
         "rule": "overused-font",
         "value": "roboto",
         "createdAt": "2026-10-17T21:22:48.983Z",
         "reason": "model triage: Roboto is only a fallback in the system font stack that Ellie's house style (ellie-taste.md, Type) requires"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "14px",
+        "createdAt": "2026-10-20T00:52:29.410Z",
+        "reason": "pitch-site calm-photo-style.md item 5: eyebrow pills are 14px by Ellie's 2026-10-19 spec; also the desktop brand subline"
       },
       {
         "rule": "repeating-stripes-gradient",
@@ -135,7 +21,7 @@
         "files": [
           "index.html"
         ],
-        "createdAt": "2026-10-20T00:48:42.999Z",
+        "createdAt": "2026-10-20T00:53:05.287Z",
         "reason": "pitch-site calm-photo-style.md item 2: Ellie chose the faint 3.5% diagonal band texture on 2026-10-19"
       }
     ]
