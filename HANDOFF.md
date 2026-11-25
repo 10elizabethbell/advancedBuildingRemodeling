@@ -3,7 +3,7 @@
 **Live:** https://10elizabethbell.github.io/advancedBuildingRemodeling/ · **Repo:** https://github.com/10elizabethbell/advancedBuildingRemodeling (public) · **Built:** 2026-10-08 from the Muse brief of 2026-10-08 · **Revamped:** 2026-10-19 to the calm band style
 
 ## Revamp, 2026-10-19: what changed
-- **The whole page was rebuilt** from the DPG reference build (`~/Projects/freelance/dpgHomeImprovement/index.html`), in the calm band style (`calm-photo-style.md`).
+- **The whole page was rebuilt** from the DPG reference build (`~/Projects/freelance/websites/dpgHomeImprovement/index.html`), in the calm band style (`calm-photo-style.md`).
 - **The fogged-window world is gone.** That meant:
   - the wipe-to-clear hero canvas, the water-bead seams between sections, and the ghost finger
   - the amber credentials strip
